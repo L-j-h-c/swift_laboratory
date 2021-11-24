@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         l.layer.position = CGPoint(x: self.view.bounds.width/2, y: 200)
         return l
     }()
-
+    
 }
 
 class CustomSegmentedControl: UISegmentedControl{
