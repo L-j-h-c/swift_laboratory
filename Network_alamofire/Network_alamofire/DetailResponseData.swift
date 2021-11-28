@@ -41,3 +41,16 @@ struct ReviewList: Codable {
     let contents: String
     let likeCount: Int
 }
+
+// MARK: - Welcome
+struct likeCountResponseData: Codable {
+    let status: Int
+    let success: Bool
+    let message: String
+    let data: likeCountClass?
+}
+
+// MARK: - DataClass
+struct likeCountClass: Codable {
+    let like: Int
+}

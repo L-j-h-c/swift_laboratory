@@ -58,6 +58,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Car-sd-mfM">
+                                <rect key="frame" x="72" y="411" width="67" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="likeCountButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aui-gC-M8S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XLA-qv-e6x">
+                                <rect key="frame" x="213" y="416" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-Ut-UlJ">
+                                <rect key="frame" x="84" y="497" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,12 +91,14 @@
                         <outlet property="d" destination="CvL-H2-fAf" id="1l1-Ki-Ocs"/>
                         <outlet property="e" destination="C0H-yT-LZ4" id="PSa-zZ-FFP"/>
                         <outlet property="f" destination="1WW-Qm-HGP" id="bCy-lI-k5Y"/>
+                        <outlet property="likeCount" destination="B2X-Ut-UlJ" id="AB2-m1-K5u"/>
+                        <outlet property="putResponseLabel" destination="XLA-qv-e6x" id="YZr-m1-i8s"/>
                         <outlet property="userStorageLabel" destination="Xk9-eK-wsJ" id="Eqn-BN-QbJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-25" y="48"/>
+            <point key="canvasLocation" x="-26.399999999999999" y="47.290640394088669"/>
         </scene>
     </scenes>
     <resources>
