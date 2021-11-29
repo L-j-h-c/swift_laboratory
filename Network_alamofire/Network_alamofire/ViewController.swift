@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var likeCount: UILabel!
     
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var postReviewContent: UILabel!
+    @IBOutlet weak var postReviewId: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,10 @@ class ViewController: UIViewController {
         putLikeCount()
     }
     
+    @IBAction func postReviewButton(_ sender: Any) {
+        postReview()
+    }
+    
     public var updateCount : Int = 0 {
         didSet {
             getUserData()
@@ -39,12 +47,18 @@ class ViewController: UIViewController {
         }
     }
     
+    public var updateReview : Int = 0 {
+        didSet {
+            print("2")
+        }
+    }
+    
     public var bookNumber : Int = 1
+    
+    public var reviewIdForGet : Int = 0
 }
 
 extension ViewController {
-    
-
     
     func getUserData() {
         UserSignService.shared.readUserData(bookId: bookNumber) { responseData in
@@ -88,6 +102,30 @@ extension ViewController {
                         likeCountResponseData else {return}
                 self.updateCount += 1
                 self.putResponseLabel.text = response.message
+            case .requestErr(let msg):
+                print("requestErr \(msg)")
+            case .pathErr:
+                print("pathErr")
+            case .serverErr:
+                print("serverErr")
+            case .networkFail:
+                print("networkFail")
+            }
+        }
+    }
+    
+    func postReview() {
+        PostReviewService.shared.makeReviewService(content: textField.text ?? "") { responseData in
+            switch responseData {
+            case .success(let postReviewResponse):
+                guard let response = postReviewResponse as?
+                        postReviewResponseData else {return}
+                print("7")
+                if let reviewData = response.data {
+                    self.postReviewContent.text = "reviewId = \(reviewData.reviewID)"
+                    self.reviewIdForGet = reviewData.reviewID
+                    self.updateReview += 1
+                }
             case .requestErr(let msg):
                 print("requestErr \(msg)")
             case .pathErr:

@@ -19,6 +19,7 @@
 		EBB5C4C72750A8780025EE5F /* BookInfoGetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5C4C62750A8780025EE5F /* BookInfoGetService.swift */; };
 		EBB5C4C92750A8A40025EE5F /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5C4C82750A8A40025EE5F /* APIConstants.swift */; };
 		EBB5C4CB2750ADB80025EE5F /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB5C4CA2750ADB80025EE5F /* NetworkResult.swift */; };
+		EBFAF1E42754FA00001FCA0C /* PostReviewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAF1E32754FA00001FCA0C /* PostReviewService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		EBB5C4C62750A8780025EE5F /* BookInfoGetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfoGetService.swift; sourceTree = "<group>"; };
 		EBB5C4C82750A8A40025EE5F /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		EBB5C4CA2750ADB80025EE5F /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		EBFAF1E32754FA00001FCA0C /* PostReviewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostReviewService.swift; sourceTree = "<group>"; };
 		EFECAD6B499518B39B46FD38 /* Pods-Network_alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Network_alamofire.release.xcconfig"; path = "Target Support Files/Pods-Network_alamofire/Pods-Network_alamofire.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 				EBB5C4C4275055480025EE5F /* DetailResponseData.swift */,
 				EBB5C4C62750A8780025EE5F /* BookInfoGetService.swift */,
 				EB97949A2752DDEA00669335 /* ReviewLikeService.swift */,
+				EBFAF1E32754FA00001FCA0C /* PostReviewService.swift */,
 				EBB5C4CA2750ADB80025EE5F /* NetworkResult.swift */,
 				EBB5C4C82750A8A40025EE5F /* APIConstants.swift */,
 			);
@@ -223,6 +226,7 @@
 			files = (
 				EB8D88C3274E7C6500F216ED /* ViewController.swift in Sources */,
 				EB8D88BF274E7C6500F216ED /* AppDelegate.swift in Sources */,
+				EBFAF1E42754FA00001FCA0C /* PostReviewService.swift in Sources */,
 				EB97949B2752DDEA00669335 /* ReviewLikeService.swift in Sources */,
 				EBB5C4C92750A8A40025EE5F /* APIConstants.swift in Sources */,
 				EB8D88C1274E7C6500F216ED /* SceneDelegate.swift in Sources */,
