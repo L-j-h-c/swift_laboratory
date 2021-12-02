@@ -14,6 +14,10 @@
 		EB5465FE2758B9DA00B42FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5465FC2758B9DA00B42FAF /* Main.storyboard */; };
 		EB5466002758B9DE00B42FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB5465FF2758B9DE00B42FAF /* Assets.xcassets */; };
 		EB5466032758B9DE00B42FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB5466012758B9DE00B42FAF /* LaunchScreen.storyboard */; };
+		EB54660E2758BE9000B42FAF /* HomeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54660D2758BE9000B42FAF /* HomeDataModel.swift */; };
+		EB5466102758BEA100B42FAF /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB54660F2758BEA100B42FAF /* HomeService.swift */; };
+		EB5466122758BEB200B42FAF /* GeneralAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5466112758BEB200B42FAF /* GeneralAPI.swift */; };
+		EB5466142758BEBF00B42FAF /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5466132758BEBF00B42FAF /* NetworkResult.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		EB5465FF2758B9DE00B42FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB5466022758B9DE00B42FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB5466042758B9DE00B42FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB54660D2758BE9000B42FAF /* HomeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataModel.swift; sourceTree = "<group>"; };
+		EB54660F2758BEA100B42FAF /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		EB5466112758BEB200B42FAF /* GeneralAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralAPI.swift; sourceTree = "<group>"; };
+		EB5466132758BEBF00B42FAF /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,7 @@
 		EB5465F52758B9DA00B42FAF /* Moya-laboratory */ = {
 			isa = PBXGroup;
 			children = (
+				EB54660A2758BE3E00B42FAF /* Network */,
 				EB5465F62758B9DA00B42FAF /* AppDelegate.swift */,
 				EB5465F82758B9DA00B42FAF /* SceneDelegate.swift */,
 				EB5465FA2758B9DA00B42FAF /* ViewController.swift */,
@@ -72,6 +81,33 @@
 				EB5466042758B9DE00B42FAF /* Info.plist */,
 			);
 			path = "Moya-laboratory";
+			sourceTree = "<group>";
+		};
+		EB54660A2758BE3E00B42FAF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				EB54660C2758BE6F00B42FAF /* Service */,
+				EB54660B2758BE5C00B42FAF /* Models */,
+				EB5466112758BEB200B42FAF /* GeneralAPI.swift */,
+				EB5466132758BEBF00B42FAF /* NetworkResult.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		EB54660B2758BE5C00B42FAF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB54660D2758BE9000B42FAF /* HomeDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB54660C2758BE6F00B42FAF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EB54660F2758BEA100B42FAF /* HomeService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		EFB1CB504844C6F560B005F1 /* Frameworks */ = {
@@ -88,7 +124,6 @@
 				333C00E88FF02BF5E9651E93 /* Pods-Moya-laboratory.debug.xcconfig */,
 				32DAF3268281BCF5232BC630 /* Pods-Moya-laboratory.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -209,7 +244,11 @@
 			files = (
 				EB5465FB2758B9DA00B42FAF /* ViewController.swift in Sources */,
 				EB5465F72758B9DA00B42FAF /* AppDelegate.swift in Sources */,
+				EB54660E2758BE9000B42FAF /* HomeDataModel.swift in Sources */,
+				EB5466122758BEB200B42FAF /* GeneralAPI.swift in Sources */,
 				EB5465F92758B9DA00B42FAF /* SceneDelegate.swift in Sources */,
+				EB5466102758BEA100B42FAF /* HomeService.swift in Sources */,
+				EB5466142758BEBF00B42FAF /* NetworkResult.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
