@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C1132C1548FBB1E22B61F036 /* Pods_Moya_laboratory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70769B0D48F1A6EB68B6A71 /* Pods_Moya_laboratory.framework */; };
 		EB5465F72758B9DA00B42FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5465F62758B9DA00B42FAF /* AppDelegate.swift */; };
 		EB5465F92758B9DA00B42FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5465F82758B9DA00B42FAF /* SceneDelegate.swift */; };
 		EB5465FB2758B9DA00B42FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5465FA2758B9DA00B42FAF /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32DAF3268281BCF5232BC630 /* Pods-Moya-laboratory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-laboratory.release.xcconfig"; path = "Target Support Files/Pods-Moya-laboratory/Pods-Moya-laboratory.release.xcconfig"; sourceTree = "<group>"; };
+		333C00E88FF02BF5E9651E93 /* Pods-Moya-laboratory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Moya-laboratory.debug.xcconfig"; path = "Target Support Files/Pods-Moya-laboratory/Pods-Moya-laboratory.debug.xcconfig"; sourceTree = "<group>"; };
+		B70769B0D48F1A6EB68B6A71 /* Pods_Moya_laboratory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Moya_laboratory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5465F32758B9DA00B42FAF /* Moya-laboratory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moya-laboratory.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB5465F62758B9DA00B42FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB5465F82758B9DA00B42FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1132C1548FBB1E22B61F036 /* Pods_Moya_laboratory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				EB5465F52758B9DA00B42FAF /* Moya-laboratory */,
 				EB5465F42758B9DA00B42FAF /* Products */,
+				F80CEB7349C4E17354806CD7 /* Pods */,
+				EFB1CB504844C6F560B005F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Moya-laboratory";
 			sourceTree = "<group>";
 		};
+		EFB1CB504844C6F560B005F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B70769B0D48F1A6EB68B6A71 /* Pods_Moya_laboratory.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F80CEB7349C4E17354806CD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				333C00E88FF02BF5E9651E93 /* Pods-Moya-laboratory.debug.xcconfig */,
+				32DAF3268281BCF5232BC630 /* Pods-Moya-laboratory.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EB5466072758B9DE00B42FAF /* Build configuration list for PBXNativeTarget "Moya-laboratory" */;
 			buildPhases = (
+				F69AF127838A3F1069258920 /* [CP] Check Pods Manifest.lock */,
 				EB5465EF2758B9DA00B42FAF /* Sources */,
 				EB5465F02758B9DA00B42FAF /* Frameworks */,
 				EB5465F12758B9DA00B42FAF /* Resources */,
+				12C644156FBD91D6D6E189D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12C644156FBD91D6D6E189D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya-laboratory/Pods-Moya-laboratory-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Moya-laboratory/Pods-Moya-laboratory-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Moya-laboratory/Pods-Moya-laboratory-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F69AF127838A3F1069258920 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Moya-laboratory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EB5465EF2758B9DA00B42FAF /* Sources */ = {
@@ -284,6 +353,7 @@
 		};
 		EB5466082758B9DE00B42FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333C00E88FF02BF5E9651E93 /* Pods-Moya-laboratory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +382,7 @@
 		};
 		EB5466092758B9DE00B42FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32DAF3268281BCF5232BC630 /* Pods-Moya-laboratory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
