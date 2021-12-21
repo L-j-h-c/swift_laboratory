@@ -6,10 +6,22 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
-    
+    lazy var lottieView: AnimationView = {
+        let animationView = AnimationView(name: "snowman")
+        animationView.frame = CGRect(x: 0,
+                                     y: 0,
+                                     width: 300,
+                                     height: 300)
+        animationView.center = self.view.center
+        animationView.contentMode = .scaleAspectFit
+        animationView.stop()
+        animationView.isHidden = true
+        return animationView
+    }()
     @IBOutlet weak var firstUIView: UIView!
     @IBOutlet weak var secondUIView: UIView!
     @IBOutlet weak var thirdUIView: UIView!
@@ -23,6 +35,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         firstAnimation()
         secondAnimation()
+
     }
     
     func firstAnimation() {

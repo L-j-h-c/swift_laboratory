@@ -14,6 +14,8 @@
 		EB729924277199770036927A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB729922277199770036927A /* Main.storyboard */; };
 		EB729926277199890036927A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB729925277199890036927A /* Assets.xcassets */; };
 		EB729929277199890036927A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB729927277199890036927A /* LaunchScreen.storyboard */; };
+		EB7299312771B41E0036927A /* secondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7299302771B41E0036927A /* secondVC.swift */; };
+		EB7299332771B6D60036927A /* snowman.json in Resources */ = {isa = PBXBuildFile; fileRef = EB7299322771B6D60036927A /* snowman.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		EB729925277199890036927A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB729928277199890036927A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB72992A277199890036927A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7299302771B41E0036927A /* secondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondVC.swift; sourceTree = "<group>"; };
+		EB7299322771B6D60036927A /* snowman.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = snowman.json; sourceTree = SOURCE_ROOT; };
 		FA06DB608E218AB75A62EAE6 /* Pods-animation-basic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-animation-basic.release.xcconfig"; path = "Target Support Files/Pods-animation-basic/Pods-animation-basic.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -48,7 +52,6 @@
 				970F7CBDEE8B022414024485 /* Pods-animation-basic.debug.xcconfig */,
 				FA06DB608E218AB75A62EAE6 /* Pods-animation-basic.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,9 +84,11 @@
 		EB72991B277199770036927A /* animation-basic */ = {
 			isa = PBXGroup;
 			children = (
+				EB7299322771B6D60036927A /* snowman.json */,
 				EB72991C277199770036927A /* AppDelegate.swift */,
 				EB72991E277199770036927A /* SceneDelegate.swift */,
 				EB729920277199770036927A /* ViewController.swift */,
+				EB7299302771B41E0036927A /* secondVC.swift */,
 				EB729922277199770036927A /* Main.storyboard */,
 				EB729925277199890036927A /* Assets.xcassets */,
 				EB729927277199890036927A /* LaunchScreen.storyboard */,
@@ -155,6 +160,7 @@
 				EB729929277199890036927A /* LaunchScreen.storyboard in Resources */,
 				EB729926277199890036927A /* Assets.xcassets in Resources */,
 				EB729924277199770036927A /* Main.storyboard in Resources */,
+				EB7299332771B6D60036927A /* snowman.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +215,7 @@
 			files = (
 				EB729921277199770036927A /* ViewController.swift in Sources */,
 				EB72991D277199770036927A /* AppDelegate.swift in Sources */,
+				EB7299312771B41E0036927A /* secondVC.swift in Sources */,
 				EB72991F277199770036927A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
