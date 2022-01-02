@@ -9,18 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var reference1: Person?
+    var reference2: Person?
+    var reference3: Person?
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
-    var reference1: Person?
-    var reference2: Person?
-    var reference3: Person?
+    func initiating() {
+        //reference1의 참조 횟수가 하나씩 감소하는 예제
+        reference1 = Person(name: "John Appleseed")
+        reference2 = reference1
+        reference3 = reference1
+        
+        reference3 = nil
+        reference2 = nil
+        reference1 = nil
+    }
     
-    reference1 = Person(name: "John Appleseed")
-    
-    reference2 = nil
 }
 
 class Person {
