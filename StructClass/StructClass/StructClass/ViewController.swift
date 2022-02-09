@@ -30,11 +30,23 @@ class ViewController: UIViewController {
     
     var kimchi: Food? = Food()
     let potato: Food = Food()
+    
+    // 아래는 클래스가 참조 타입임을 확인하기 위한 인스턴스 선언
+    var tomato: Food? = Food()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setProperties()
+        checkReference()
+        
+        changeMemberAge(firstMember)
+        print("firstMember의 나이 : \(firstMember.age)")
+        
+        changeFoodPrice(tomato ?? Food())
+        print("tomato의 가격 : \(tomato!.price)")
+        
+        useIdentifyOperator()
     }
 
     func setProperties() {
@@ -53,5 +65,36 @@ class ViewController: UIViewController {
         potato.weight = 500
         
         kimchi = nil
+    }
+    
+    func checkReference() {
+        var apple: Food = Food()
+        var pineapple: Food = apple
+        
+        print("apple의 가격 : \(apple.price)")
+        print("pineapple의 가격 : \(pineapple.price)")
+        
+        pineapple.price = 200
+        print("바뀐 apple의 가격 : \(apple.price)")
+        print("바뀐 pineapple의 가격 : \(pineapple.price)")
+    }
+    
+    func changeMemberAge(_ member: Member) {
+        var targetMember: Member = member
+        targetMember.age = 15
+    }
+    
+    func changeFoodPrice(_ food: Food) {
+        food.price = 300
+    }
+    
+    func useIdentifyOperator() {
+        var apple: Food = Food()
+        var pineapple: Food = apple
+        var tomato: Food = Food()
+
+        print(apple === pineapple)
+        print(apple === tomato)
+        print(apple !== tomato)
     }
 }
