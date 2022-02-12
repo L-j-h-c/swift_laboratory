@@ -1,13 +1,11 @@
 //
 //  ViewController.swift
-//  PropertyMethod
+//  LifeCycle
 //
-//  Created by Junho Lee on 2022/02/11.
+//  Created by Junho Lee on 2022/02/12.
 //
 
 import UIKit
-
-class 
 
 class ViewController: UIViewController {
 
@@ -16,6 +14,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    
+
 }
 
