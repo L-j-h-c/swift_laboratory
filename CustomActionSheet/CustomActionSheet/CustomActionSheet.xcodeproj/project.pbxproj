@@ -14,6 +14,8 @@
 		EB7FC4E227BD603500082286 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7FC4E027BD603500082286 /* Main.storyboard */; };
 		EB7FC4E427BD603A00082286 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7FC4E327BD603A00082286 /* Assets.xcassets */; };
 		EB7FC4E727BD603A00082286 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7FC4E527BD603A00082286 /* LaunchScreen.storyboard */; };
+		EB7FC4F027BD62FA00082286 /* SparkActionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7FC4EF27BD62FA00082286 /* SparkActionSheet.swift */; };
+		EBC18D6327C3F24000F33F59 /* SparkAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC18D6227C3F24000F33F59 /* SparkAlert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		EB7FC4E327BD603A00082286 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7FC4E627BD603A00082286 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7FC4E827BD603A00082286 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB7FC4EF27BD62FA00082286 /* SparkActionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkActionSheet.swift; sourceTree = "<group>"; };
+		EBC18D6227C3F24000F33F59 /* SparkAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SparkAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				25AB3944994F60DA2637F2EE /* Pods-CustomActionSheet.debug.xcconfig */,
 				64A27DF7583A387195996B88 /* Pods-CustomActionSheet.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,7 @@
 		EB7FC4D927BD603500082286 /* CustomActionSheet */ = {
 			isa = PBXGroup;
 			children = (
+				EB7FC4EE27BD62D600082286 /* Class */,
 				EB7FC4DA27BD603500082286 /* AppDelegate.swift */,
 				EB7FC4DC27BD603500082286 /* SceneDelegate.swift */,
 				EB7FC4DE27BD603500082286 /* ViewController.swift */,
@@ -90,6 +94,15 @@
 				EB7FC4E827BD603A00082286 /* Info.plist */,
 			);
 			path = CustomActionSheet;
+			sourceTree = "<group>";
+		};
+		EB7FC4EE27BD62D600082286 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				EB7FC4EF27BD62FA00082286 /* SparkActionSheet.swift */,
+				EBC18D6227C3F24000F33F59 /* SparkAlert.swift */,
+			);
+			path = Class;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB7FC4DF27BD603500082286 /* ViewController.swift in Sources */,
+				EBC18D6327C3F24000F33F59 /* SparkAlert.swift in Sources */,
+				EB7FC4F027BD62FA00082286 /* SparkActionSheet.swift in Sources */,
 				EB7FC4DB27BD603500082286 /* AppDelegate.swift in Sources */,
 				EB7FC4DD27BD603500082286 /* SceneDelegate.swift in Sources */,
 			);
