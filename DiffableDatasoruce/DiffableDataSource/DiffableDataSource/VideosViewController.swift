@@ -55,9 +55,26 @@ extension VideosViewController {
 //    present(safariViewController, animated: true, completion: nil)
 //  }
 }
+
 // MARK: - UISearchResultsUpdating Delegate
 extension VideosViewController: UISearchResultsUpdating {
+  func updateSearchResults(for searchController: UISearchController) {
+    videoList = filteredVideos(for: searchController.searchBar.text)
+    collectionView.reloadData()
+  }
+  
+  func filteredVideos(for queryOrNil: String?) -> [Video] {
+    let videos = Video.allVideos
+    guard
+      let query = queryOrNil, !query.isEmpty
+      else {
+        return videos
     }
+    return videos.filter {
+      return $0.title.lowercased().contains(query.lowercased())
+    }
+  }
+  
   func configureSearchController() {
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
