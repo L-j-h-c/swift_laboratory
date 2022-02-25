@@ -10,6 +10,27 @@ import UIKit
 
 import SnapKit
 
+// MARK: - SparkSection class
+
+public class SparkSection {
+    public var actions = [SparkAction]()
+    
+    public init() {}
+}
+
+// MARK: SparkAction Class
+
+public class SparkAction {
+    public var data: String
+    public var buttonType: sparkActionTitleType
+    public var handler: (() -> Void)?
+    
+    public init(_ data: String, titleType: sparkActionTitleType = .normalTitle, handler: (() -> Void)?) {
+        self.data = data
+        self.buttonType = titleType
+        self.handler = handler
+    }
+}
 class SparkActionSheet: UIViewController {
     
     lazy var backgroundView: UIView = {
