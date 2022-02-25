@@ -10,50 +10,50 @@ import UIKit
 class ViewController: UIViewController {
     
     let customAction = SparkActionSheet()
+    private let picker = UIImagePickerController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         setUI()
     }
-    lazy var backgroundView: UIView = {
-        let backgroundView = UIView()
-        backgroundView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        backgroundView.backgroundColor = UIColor.black.withAlphaComponent(0.5)
-        return backgroundView
-    }()
-    
-    let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(tapGestureDidRecognize(_:)))
     
     @IBAction func presentActionSheet(_ sender: Any) {
+        customAction.addAction(SparkAction("1번 버튼", titleType: .normalTitle, handler: {
+            print("1번")
+        }))
+        
+        customAction.addAction(SparkAction("2번 버튼", titleType: .pinkTitle, handler: {
+            print("2번")
+        }))
+        
+        customAction.addSection()
+        
+        customAction.addAction(SparkAction("앨범 보기", titleType: .normalTitle, handler: {
+            self.customAction.dismiss(animated: true) {
+                self.picker.sourceType = .photoLibrary
+                self.present(self.picker, animated: true, completion: nil)
+            }
+        }))
+        
         present(customAction, animated: true)
     }
     
     private func setUI() {
         view.backgroundColor = .systemPurple
-        
-        lazy var cancelButton = UIButton(frame: CGRect(x: 0, y: 0, width: 100, height: 300))
-        cancelButton.setTitleColor(.red, for: UIControl.State())
-        cancelButton.setTitle("cancelView", for: UIControl.State())
-        cancelButton.isUserInteractionEnabled = true
-        cancelButton.addGestureRecognizer(tapRecognizer)
-        cancelButton.addTarget(self, action: #selector(tapGestureDidRecogniz), for: .touchUpInside)
-        cancelButton.isEnabled = true
-        view.addSubview(cancelButton)
-    }
-    
-    private func setLayout() {
-        
-    }
-    
-    @objc func tapGestureDidRecognize(_ gesture: UITapGestureRecognizer) {
-        print("hi")
-//        self.dismiss(animated: true)
-    }
-    
-    @objc func tapGestureDidRecogniz() {
-        print("hi")
-//        self.dismiss(animated: true)
     }
 }
 
+// MARK: - UIImagePickerDelegate
+extension ViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.dismiss(animated: true, completion: nil)
+    }
+
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        }
+        
+    }
+}
