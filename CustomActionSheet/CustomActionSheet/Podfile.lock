@@ -1,0 +1,22 @@
+PODS:
+  - SnapKit (5.0.1)
+  - XLActionController (5.1.0):
+    - XLActionController/Core (= 5.1.0)
+  - XLActionController/Core (5.1.0)
+
+DEPENDENCIES:
+  - SnapKit (~> 5.0.0)
+  - XLActionController
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
+    - XLActionController
+
+SPEC CHECKSUMS:
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  XLActionController: 24140d835ab9e260270711afebc5efabebe9d392
+
+PODFILE CHECKSUM: 39de2ca39e3e869a3a22a31fd92adfd767f15507
+
+COCOAPODS: 1.11.2
