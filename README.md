@@ -14,4 +14,4 @@
 |9|`Diffable DataSource` `Search Bar`|Diffable Datasource와 검색창|22.02.23 ~|-|
 |10|`AsyncAwait`|AsyncAwait로 비동기 처리 연습하기|22.03.25 ~|-|
 |11|`ErrorHandlign`|`try-throw`,`do-catch`,`rethrow`,`defer`|22.03.26 ~|-|
-|10|`URLSession`|URLSession으로 서버통시 해보기|22.03.27 ~|-|
+|12|`URLSession`|URLSession으로 서버통신 해보기|22.03.27 ~|-|
