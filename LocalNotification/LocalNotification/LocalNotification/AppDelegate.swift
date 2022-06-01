@@ -25,6 +25,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         })
         
+        userNotificationCenter?.getPendingNotificationRequests(completionHandler: { requests in
+            for request in requests {
+                print(request.identifier)
+            }
+        })
+        
         return true
     }
 
@@ -52,7 +58,8 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        //
+        let targetScene = response.notification.request.content.userInfo["targetScene"]
+        
         completionHandler()
     }
 }
