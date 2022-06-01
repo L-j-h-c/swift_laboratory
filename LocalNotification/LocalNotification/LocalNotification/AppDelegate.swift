@@ -6,14 +6,24 @@
 //
 
 import UIKit
+import UserNotifications
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var userNotificationCenter: UNUserNotificationCenter?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        userNotificationCenter = UNUserNotificationCenter.current()
+        UNUserNotificationCenter.current().delegate = self
+
+        let authorizationOptions = UNAuthorizationOptions(arrayLiteral: [.alert, .badge, .sound])
+        userNotificationCenter?.requestAuthorization(options: authorizationOptions, completionHandler: { granted, error in
+            if let error = error {
+                print("ERROR" + error.localizedDescription)
+            }
+        })
         
         return true
     }
@@ -35,3 +45,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        // 보내기 전에 노티피케이션을 핸들링할 수 있다.
+        completionHandler([.banner, .list, .badge, .sound])
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        //
+        completionHandler()
+    }
+}
