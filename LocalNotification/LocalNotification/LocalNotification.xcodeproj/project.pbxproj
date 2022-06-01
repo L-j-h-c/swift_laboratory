@@ -13,6 +13,7 @@
 		EBC80E0328476E9E003162E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC80E0128476E9E003162E5 /* Main.storyboard */; };
 		EBC80E0528476EA0003162E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBC80E0428476EA0003162E5 /* Assets.xcassets */; };
 		EBC80E0828476EA0003162E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBC80E0628476EA0003162E5 /* LaunchScreen.storyboard */; };
+		EBC80E1028477422003162E5 /* UNNotificationCenter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC80E0F28477422003162E5 /* UNNotificationCenter+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBC80E0428476EA0003162E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBC80E0728476EA0003162E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBC80E0928476EA0003162E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBC80E0F28477422003162E5 /* UNNotificationCenter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UNNotificationCenter+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EBC80DFB28476E9E003162E5 /* AppDelegate.swift */,
 				EBC80DFD28476E9E003162E5 /* SceneDelegate.swift */,
 				EBC80DFF28476E9E003162E5 /* ViewController.swift */,
+				EBC80E0F28477422003162E5 /* UNNotificationCenter+.swift */,
 				EBC80E0128476E9E003162E5 /* Main.storyboard */,
 				EBC80E0428476EA0003162E5 /* Assets.xcassets */,
 				EBC80E0628476EA0003162E5 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBC80E1028477422003162E5 /* UNNotificationCenter+.swift in Sources */,
 				EBC80E0028476E9E003162E5 /* ViewController.swift in Sources */,
 				EBC80DFC28476E9E003162E5 /* AppDelegate.swift in Sources */,
 				EBC80DFE28476E9E003162E5 /* SceneDelegate.swift in Sources */,
