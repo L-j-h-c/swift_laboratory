@@ -16,5 +16,5 @@
 |11|`ErrorHandlign`|`try-throw`,`do-catch`,`rethrow`,`defer`|22.03.26 ~|-|
 |12|`URLSession`|URLSession으로 서버통신 해보기|22.03.27 ~|-|
 |13|`Coordinator`|Coordinator와 화면 전환|22.03.31 ~|-|
-|14|`APNs`|APNs 실전 활용해보기|22.05.17 ~|-|
-|15|`Local Notification`|로컬 알림 구현하기|22.06.01|-|
+|14|`APNs`|APNs 실전 활용해보기|22.05.17 ~ 22.06.12|[📒](https://jazz-the-it.tistory.com/41)|
+|15|`Local Notification`|로컬 알림 구현하기|22.06.01|[📒](https://jazz-the-it.tistory.com/37)|
