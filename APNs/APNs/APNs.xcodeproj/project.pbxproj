@@ -21,6 +21,7 @@
 		425396674B436E40147B1F49 /* Pods_APNs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APNs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF725365B4DEDA337A3CF18 /* Pods-APNs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNs.debug.xcconfig"; path = "Target Support Files/Pods-APNs/Pods-APNs.debug.xcconfig"; sourceTree = "<group>"; };
 		EB3B46272854D11E004E7AF1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EB3B46292854D44F004E7AF1 /* APNs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNs.entitlements; sourceTree = "<group>"; };
 		EBB260B42838F594001416D8 /* APNs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB260B72838F594001416D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBB260B92838F594001416D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 				DEF725365B4DEDA337A3CF18 /* Pods-APNs.debug.xcconfig */,
 				FF786A9E417C21654D382E5F /* Pods-APNs.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -83,6 +83,7 @@
 		EBB260B62838F594001416D8 /* APNs */ = {
 			isa = PBXGroup;
 			children = (
+				EB3B46292854D44F004E7AF1 /* APNs.entitlements */,
 				EBB260B72838F594001416D8 /* AppDelegate.swift */,
 				EBB260B92838F594001416D8 /* SceneDelegate.swift */,
 				EBB260BB2838F594001416D8 /* ViewController.swift */,
@@ -359,6 +360,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APNs/APNs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FY8N9XTH66;
@@ -388,6 +390,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = APNs/APNs.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FY8N9XTH66;
