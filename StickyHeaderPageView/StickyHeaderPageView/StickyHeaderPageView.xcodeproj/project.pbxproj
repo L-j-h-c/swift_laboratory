@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA37E618097E3D5AC39A34E0 /* Pods_StickyHeaderPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BF4A3EEAE311734932F700 /* Pods_StickyHeaderPageView.framework */; };
 		EBF2D352286B1B3500468551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D351286B1B3500468551 /* AppDelegate.swift */; };
 		EBF2D354286B1B3500468551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D353286B1B3500468551 /* SceneDelegate.swift */; };
 		EBF2D356286B1B3500468551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D355286B1B3500468551 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E719338E8C808EECDA7E71E /* Pods-StickyHeaderPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyHeaderPageView.release.xcconfig"; path = "Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView.release.xcconfig"; sourceTree = "<group>"; };
+		53AC0C5EFDAF90EDD0E5BED9 /* Pods-StickyHeaderPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyHeaderPageView.debug.xcconfig"; path = "Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView.debug.xcconfig"; sourceTree = "<group>"; };
 		EBF2D34E286B1B3500468551 /* StickyHeaderPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyHeaderPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF2D351286B1B3500468551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF2D353286B1B3500468551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EBF2D35A286B1B3800468551 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBF2D35D286B1B3800468551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF2D35F286B1B3800468551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1BF4A3EEAE311734932F700 /* Pods_StickyHeaderPageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyHeaderPageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA37E618097E3D5AC39A34E0 /* Pods_StickyHeaderPageView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		59CC94C0B1CEE61CE49BF59A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AC0C5EFDAF90EDD0E5BED9 /* Pods-StickyHeaderPageView.debug.xcconfig */,
+				0E719338E8C808EECDA7E71E /* Pods-StickyHeaderPageView.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		761FEA5482738BDDF10F581E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1BF4A3EEAE311734932F700 /* Pods_StickyHeaderPageView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EBF2D345286B1B3500468551 = {
 			isa = PBXGroup;
 			children = (
 				EBF2D350286B1B3500468551 /* StickyHeaderPageView */,
 				EBF2D34F286B1B3500468551 /* Products */,
+				59CC94C0B1CEE61CE49BF59A /* Pods */,
+				761FEA5482738BDDF10F581E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBF2D362286B1B3800468551 /* Build configuration list for PBXNativeTarget "StickyHeaderPageView" */;
 			buildPhases = (
+				262903FDDF7DAA1D84686467 /* [CP] Check Pods Manifest.lock */,
 				EBF2D34A286B1B3500468551 /* Sources */,
 				EBF2D34B286B1B3500468551 /* Frameworks */,
 				EBF2D34C286B1B3500468551 /* Resources */,
+				05D32EFF15DB6F1E80D293AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05D32EFF15DB6F1E80D293AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		262903FDDF7DAA1D84686467 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StickyHeaderPageView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBF2D34A286B1B3500468551 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		EBF2D363286B1B3800468551 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53AC0C5EFDAF90EDD0E5BED9 /* Pods-StickyHeaderPageView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		EBF2D364286B1B3800468551 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E719338E8C808EECDA7E71E /* Pods-StickyHeaderPageView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

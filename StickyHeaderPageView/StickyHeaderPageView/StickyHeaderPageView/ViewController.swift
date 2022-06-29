@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Snapkit
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
