@@ -46,6 +46,7 @@ class PagedView: UIView {
         super.init(frame: .zero)
         
         self.setupUI()
+        self.setLayout()
     }
     
     required init?(coder: NSCoder) {

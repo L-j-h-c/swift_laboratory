@@ -15,6 +15,7 @@
 		EBF2D35B286B1B3800468551 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBF2D35A286B1B3800468551 /* Assets.xcassets */; };
 		EBF2D35E286B1B3800468551 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBF2D35C286B1B3800468551 /* LaunchScreen.storyboard */; };
 		EBF2D369286D918C00468551 /* PagedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D368286D918C00468551 /* PagedView.swift */; };
+		EBF2D36B286D967300468551 /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D36A286D967300468551 /* TabbedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		EBF2D35D286B1B3800468551 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBF2D35F286B1B3800468551 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EBF2D368286D918C00468551 /* PagedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagedView.swift; sourceTree = "<group>"; };
+		EBF2D36A286D967300468551 /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
 		F1BF4A3EEAE311734932F700 /* Pods_StickyHeaderPageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StickyHeaderPageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EBF2D368286D918C00468551 /* PagedView.swift */,
+				EBF2D36A286D967300468551 /* TabbedView.swift */,
 			);
 			path = ViewPager;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF2D356286B1B3500468551 /* ViewController.swift in Sources */,
+				EBF2D36B286D967300468551 /* TabbedView.swift in Sources */,
 				EBF2D352286B1B3500468551 /* AppDelegate.swift in Sources */,
 				EBF2D369286D918C00468551 /* PagedView.swift in Sources */,
 				EBF2D354286B1B3500468551 /* SceneDelegate.swift in Sources */,
