@@ -75,8 +75,19 @@ class ViewController: UIViewController {
         
         animationView.layer.add(animationGroup, forKey: "position")
     }
+    
+    private func setTextLayer() {
+        let textLayer = CATextLayer()
+        textLayer.frame = animationLabel.bounds
+//        textLayer.foregroundColor = UIColor.systemBlue.cgColor
+//        textLayer.font = UIFont.systemFont(ofSize: 15)
+//
+//        textLayer.string = "textLayer 테스트"
+        
+        let attributedString = NSAttributedString(string: "textLayer 테스트", attributes: [.font: UIFont.systemFont(ofSize: 15), .foregroundColor: UIColor.red])
+        textLayer.string = attributedString
+        
+        animationLabel.layer.addSublayer(textLayer)
     }
-
-
 }
 
