@@ -74,6 +74,8 @@ class ViewController: UIViewController {
         animationGroup.animations = [scaleAnimation, opacityAnimation, roundTripPositionAnimation, rotationAnimation]
         
         animationView.layer.add(animationGroup, forKey: "position")
+        
+//        animationLabel.layer.add(animationGroup, forKey: "position")
     }
     
     private func setTextLayer() {
@@ -88,6 +90,37 @@ class ViewController: UIViewController {
         textLayer.string = attributedString
         
         animationLabel.layer.addSublayer(textLayer)
+        
+        let opacityAnimation = CABasicAnimation(keyPath: "opacity")
+        opacityAnimation.fromValue = 0
+        opacityAnimation.toValue = 1
+        opacityAnimation.duration = 0.5
+        opacityAnimation.repeatCount = .infinity
+        
+        let positionAnimation = CABasicAnimation(keyPath: "position")
+        positionAnimation.fromValue = [0, 0]
+        positionAnimation.toValue = [300, 300]
+        
+        let roundTripPositionAnimation = CAKeyframeAnimation(keyPath: "position.y")
+        roundTripPositionAnimation.values = [0, UIScreen.main.bounds.height-50, 0]
+        roundTripPositionAnimation.keyTimes = [0, 0.5, 1]
+        roundTripPositionAnimation.isAdditive = true
+        
+        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale.x")
+        scaleAnimation.fromValue = 1
+        scaleAnimation.toValue = 2
+        
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotationAnimation.fromValue = 0.0
+        rotationAnimation.toValue = Float.pi * 2.0
+        
+        let animationGroup = CAAnimationGroup()
+        animationGroup.duration = 5
+        animationGroup.repeatCount = .infinity
+        animationGroup.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.linear)
+        animationGroup.animations = [scaleAnimation, opacityAnimation, roundTripPositionAnimation, rotationAnimation]
+        
+        textLayer.add(animationGroup, forKey: "position")
     }
 }
 
