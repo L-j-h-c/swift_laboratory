@@ -34,6 +34,10 @@ final class CustomTabBarItem: UIView {
         }
     }
     
+    var selectedImage = UIImage()
+    
+    var deselectedImage = UIImage()
+    
     // MARK: - Initializer
     
     init(forItem item: UITabBarItem) {
@@ -41,7 +45,7 @@ final class CustomTabBarItem: UIView {
         super.init(frame: CGRect(x: 0, y: 0, width: 28, height: 48))
     
         setUI()
-        setItem(image: item.image, title: item.title)
+        setItem(image: item.image, title: item.title, selectedImage: item.selectedImage)
         setLayout()
     }
     
@@ -56,12 +60,14 @@ final class CustomTabBarItem: UIView {
         self.backgroundColor = .clear
         self.imageView.contentMode = .scaleAspectFill
         
-        titleLable.font = UIFont.systemFont(ofSize: 8)
+        titleLable.font = UIFont.systemFont(ofSize: 12)
     }
     
-    private func setItem(image: UIImage?, title: String?) {
-        if let image = image, let title = title {
+    private func setItem(image: UIImage?, title: String?, selectedImage: UIImage?) {
+        if let image = image, let title = title, let selectedImage = selectedImage {
             imageView.image = image.withRenderingMode(.alwaysTemplate)
+            self.selectedImage = selectedImage
+            self.deselectedImage = image
             titleLable.text = title
         }
     }
@@ -69,6 +75,7 @@ final class CustomTabBarItem: UIView {
     private func reloadAppearnce() {
         self.tintColor = isSelected ? selectedColor : deselectedColor
         self.titleLable.textColor = isSelected ? selectedColor : deselectedColor
+        self.imageView.image = isSelected ? selectedImage : deselectedImage
     }
     
     func itemIsSelected() {
