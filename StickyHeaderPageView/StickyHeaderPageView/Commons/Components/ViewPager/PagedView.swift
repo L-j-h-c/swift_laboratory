@@ -62,19 +62,19 @@ class PagedView: UIView {
     }
     
     private func setLayout() {
-        self.collectionView.makeConstraints { make in
-            make.edges.equalToSuperview()
-        }
-//        NSLayoutConstraint.activate([
-//            collectionView.widthAnchor
-//                .constraint(equalTo: self.widthAnchor),
-//            collectionView.heightAnchor
-//                .constraint(equalTo: self.heightAnchor),
-//            collectionView.centerXAnchor
-//                .constraint(equalTo: self.centerXAnchor),
-//            collectionView.centerYAnchor
-//                .constraint(equalTo: self.centerYAnchor)
-//        ])
+//        self.collectionView.snp.makeConstraints { make in
+//            make.edges.equalToSuperview()
+//        }
+        NSLayoutConstraint.activate([
+            collectionView.widthAnchor
+                .constraint(equalTo: self.widthAnchor),
+            collectionView.heightAnchor
+                .constraint(equalTo: self.heightAnchor),
+            collectionView.centerXAnchor
+                .constraint(equalTo: self.centerXAnchor),
+            collectionView.centerYAnchor
+                .constraint(equalTo: self.centerYAnchor)
+        ])
     }
     
     // MARK: - Actions

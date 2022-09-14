@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		DA37E618097E3D5AC39A34E0 /* Pods_StickyHeaderPageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1BF4A3EEAE311734932F700 /* Pods_StickyHeaderPageView.framework */; };
+		EB6A45012873CBDB00749582 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A45002873CBDB00749582 /* PageCollectionViewCell.swift */; };
+		EB6A45032873CC4800749582 /* TabCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A45022873CC4800749582 /* TabCollectionViewCell.swift */; };
+		EB6A45052873CC9400749582 /* ViewPager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A45042873CC9400749582 /* ViewPager.swift */; };
+		EB6A45072873CD3A00749582 /* AddTabItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A45062873CD3A00749582 /* AddTabItemView.swift */; };
 		EBF2D352286B1B3500468551 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D351286B1B3500468551 /* AppDelegate.swift */; };
 		EBF2D354286B1B3500468551 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D353286B1B3500468551 /* SceneDelegate.swift */; };
 		EBF2D356286B1B3500468551 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF2D355286B1B3500468551 /* ViewController.swift */; };
@@ -21,6 +25,10 @@
 /* Begin PBXFileReference section */
 		0E719338E8C808EECDA7E71E /* Pods-StickyHeaderPageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyHeaderPageView.release.xcconfig"; path = "Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView.release.xcconfig"; sourceTree = "<group>"; };
 		53AC0C5EFDAF90EDD0E5BED9 /* Pods-StickyHeaderPageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StickyHeaderPageView.debug.xcconfig"; path = "Target Support Files/Pods-StickyHeaderPageView/Pods-StickyHeaderPageView.debug.xcconfig"; sourceTree = "<group>"; };
+		EB6A45002873CBDB00749582 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB6A45022873CC4800749582 /* TabCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCollectionViewCell.swift; sourceTree = "<group>"; };
+		EB6A45042873CC9400749582 /* ViewPager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPager.swift; sourceTree = "<group>"; };
+		EB6A45062873CD3A00749582 /* AddTabItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTabItemView.swift; sourceTree = "<group>"; };
 		EBF2D34E286B1B3500468551 /* StickyHeaderPageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StickyHeaderPageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF2D351286B1B3500468551 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF2D353286B1B3500468551 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -117,6 +125,10 @@
 			children = (
 				EBF2D368286D918C00468551 /* PagedView.swift */,
 				EBF2D36A286D967300468551 /* TabbedView.swift */,
+				EB6A45002873CBDB00749582 /* PageCollectionViewCell.swift */,
+				EB6A45022873CC4800749582 /* TabCollectionViewCell.swift */,
+				EB6A45042873CC9400749582 /* ViewPager.swift */,
+				EB6A45062873CD3A00749582 /* AddTabItemView.swift */,
 			);
 			path = ViewPager;
 			sourceTree = "<group>";
@@ -237,10 +249,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF2D356286B1B3500468551 /* ViewController.swift in Sources */,
+				EB6A45072873CD3A00749582 /* AddTabItemView.swift in Sources */,
+				EB6A45032873CC4800749582 /* TabCollectionViewCell.swift in Sources */,
 				EBF2D36B286D967300468551 /* TabbedView.swift in Sources */,
 				EBF2D352286B1B3500468551 /* AppDelegate.swift in Sources */,
+				EB6A45052873CC9400749582 /* ViewPager.swift in Sources */,
 				EBF2D369286D918C00468551 /* PagedView.swift in Sources */,
 				EBF2D354286B1B3500468551 /* SceneDelegate.swift in Sources */,
+				EB6A45012873CBDB00749582 /* PageCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
