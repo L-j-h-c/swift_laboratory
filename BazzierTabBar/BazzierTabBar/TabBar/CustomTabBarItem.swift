@@ -55,7 +55,6 @@ final class CustomTabBarItem: UIView {
     
     // MARK: - Methods
     
-    /// Set UI.
     private func setUI() {
         self.backgroundColor = .clear
         self.imageView.contentMode = .scaleAspectFill

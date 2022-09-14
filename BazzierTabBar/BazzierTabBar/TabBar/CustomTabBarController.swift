@@ -66,7 +66,7 @@ extension CustomTabBarController {
     
     func setMiddleButton() {
 
-        let middleBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-28, y: -28, width: 56, height: 56))
+        let middleBtn = UIButton(frame: CGRect(x: (self.view.bounds.width / 2)-28, y: -28-8, width: 56, height: 56))
         middleBtn.backgroundColor = .blue
         middleBtn.layer.cornerRadius = 28
         

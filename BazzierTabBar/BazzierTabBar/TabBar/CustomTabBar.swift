@@ -174,10 +174,10 @@ extension CustomTabBar {
         path.addLine(to: CGPoint(x: (centerWidth - height * 2), y: 0)) // the beginning of the trough
 
         path.addCurve(to: CGPoint(x: centerWidth, y: height),
-        controlPoint1: CGPoint(x: (centerWidth - 30), y: 0), controlPoint2: CGPoint(x: centerWidth - 35, y: height))
+        controlPoint1: CGPoint(x: (centerWidth - 30), y: 0), controlPoint2: CGPoint(x: centerWidth - 40, y: height))
 
         path.addCurve(to: CGPoint(x: (centerWidth + height * 2), y: 0),
-        controlPoint1: CGPoint(x: centerWidth + 35, y: height), controlPoint2: CGPoint(x: (centerWidth + 30), y: 0))
+        controlPoint1: CGPoint(x: centerWidth + 40, y: height), controlPoint2: CGPoint(x: (centerWidth + 30), y: 0))
 
         path.addLine(to: CGPoint(x: self.frame.width, y: 0))
         path.addLine(to: CGPoint(x: self.frame.width, y: self.frame.height))
