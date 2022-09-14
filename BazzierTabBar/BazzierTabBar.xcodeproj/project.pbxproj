@@ -70,6 +70,7 @@
 		EBB71A8428D16C2D00309BB1 /* BazzierTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				EBB71AAA28D19B9E00309BB1 /* CurvedTabBar */,
 				EBB71AA728D17A3A00309BB1 /* MatinTabBarController */,
 				EBB71A9928D16D1B00309BB1 /* TabBar */,
 				EBB71A8528D16C2D00309BB1 /* AppDelegate.swift */,
@@ -86,8 +87,6 @@
 		EBB71A9928D16D1B00309BB1 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				EBB71A9A28D16D9100309BB1 /* CurvedTabBar.swift */,
-				EBB71A9C28D1711600309BB1 /* CurevedTabBarController.swift */,
 				EBB71A9E28D1758100309BB1 /* CustomTabBarController.swift */,
 				EBB71AA028D1759100309BB1 /* CustomTabBar.swift */,
 				EBB71AA228D1759F00309BB1 /* CustomTabBarItem.swift */,
@@ -101,6 +100,15 @@
 				EBB71AA828D17A4B00309BB1 /* MainTabBarController.swift */,
 			);
 			path = MatinTabBarController;
+			sourceTree = "<group>";
+		};
+		EBB71AAA28D19B9E00309BB1 /* CurvedTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EBB71A9A28D16D9100309BB1 /* CurvedTabBar.swift */,
+				EBB71A9C28D1711600309BB1 /* CurevedTabBarController.swift */,
+			);
+			path = CurvedTabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
