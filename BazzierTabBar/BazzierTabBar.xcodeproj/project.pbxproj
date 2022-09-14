@@ -13,6 +13,13 @@
 		EBB71A8D28D16C2E00309BB1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB71A8B28D16C2E00309BB1 /* Main.storyboard */; };
 		EBB71A8F28D16C2F00309BB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB71A8E28D16C2F00309BB1 /* Assets.xcassets */; };
 		EBB71A9228D16C2F00309BB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB71A9028D16C2F00309BB1 /* LaunchScreen.storyboard */; };
+		EBB71A9B28D16D9100309BB1 /* CurvedTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71A9A28D16D9100309BB1 /* CurvedTabBar.swift */; };
+		EBB71A9D28D1711600309BB1 /* CurevedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71A9C28D1711600309BB1 /* CurevedTabBarController.swift */; };
+		EBB71A9F28D1758100309BB1 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71A9E28D1758100309BB1 /* CustomTabBarController.swift */; };
+		EBB71AA128D1759100309BB1 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71AA028D1759100309BB1 /* CustomTabBar.swift */; };
+		EBB71AA328D1759F00309BB1 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71AA228D1759F00309BB1 /* CustomTabBarItem.swift */; };
+		EBB71AA628D175EB00309BB1 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EBB71AA528D175EB00309BB1 /* SnapKit */; };
+		EBB71AA928D17A4B00309BB1 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB71AA828D17A4B00309BB1 /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,12 @@
 		EBB71A8E28D16C2F00309BB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB71A9128D16C2F00309BB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBB71A9328D16C2F00309BB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB71A9A28D16D9100309BB1 /* CurvedTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedTabBar.swift; sourceTree = "<group>"; };
+		EBB71A9C28D1711600309BB1 /* CurevedTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurevedTabBarController.swift; sourceTree = "<group>"; };
+		EBB71A9E28D1758100309BB1 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		EBB71AA028D1759100309BB1 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		EBB71AA228D1759F00309BB1 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		EBB71AA828D17A4B00309BB1 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBB71AA628D175EB00309BB1 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +70,8 @@
 		EBB71A8428D16C2D00309BB1 /* BazzierTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				EBB71AA728D17A3A00309BB1 /* MatinTabBarController */,
+				EBB71A9928D16D1B00309BB1 /* TabBar */,
 				EBB71A8528D16C2D00309BB1 /* AppDelegate.swift */,
 				EBB71A8728D16C2D00309BB1 /* SceneDelegate.swift */,
 				EBB71A8928D16C2D00309BB1 /* ViewController.swift */,
@@ -65,6 +81,26 @@
 				EBB71A9328D16C2F00309BB1 /* Info.plist */,
 			);
 			path = BazzierTabBar;
+			sourceTree = "<group>";
+		};
+		EBB71A9928D16D1B00309BB1 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				EBB71A9A28D16D9100309BB1 /* CurvedTabBar.swift */,
+				EBB71A9C28D1711600309BB1 /* CurevedTabBarController.swift */,
+				EBB71A9E28D1758100309BB1 /* CustomTabBarController.swift */,
+				EBB71AA028D1759100309BB1 /* CustomTabBar.swift */,
+				EBB71AA228D1759F00309BB1 /* CustomTabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		EBB71AA728D17A3A00309BB1 /* MatinTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				EBB71AA828D17A4B00309BB1 /* MainTabBarController.swift */,
+			);
+			path = MatinTabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +119,9 @@
 			dependencies = (
 			);
 			name = BazzierTabBar;
+			packageProductDependencies = (
+				EBB71AA528D175EB00309BB1 /* SnapKit */,
+			);
 			productName = BazzierTabBar;
 			productReference = EBB71A8228D16C2D00309BB1 /* BazzierTabBar.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +150,9 @@
 				Base,
 			);
 			mainGroup = EBB71A7928D16C2D00309BB1;
+			packageReferences = (
+				EBB71AA428D175EB00309BB1 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EBB71A8328D16C2D00309BB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +182,13 @@
 			files = (
 				EBB71A8A28D16C2D00309BB1 /* ViewController.swift in Sources */,
 				EBB71A8628D16C2D00309BB1 /* AppDelegate.swift in Sources */,
+				EBB71AA928D17A4B00309BB1 /* MainTabBarController.swift in Sources */,
+				EBB71AA128D1759100309BB1 /* CustomTabBar.swift in Sources */,
+				EBB71A9F28D1758100309BB1 /* CustomTabBarController.swift in Sources */,
+				EBB71A9D28D1711600309BB1 /* CurevedTabBarController.swift in Sources */,
+				EBB71A9B28D16D9100309BB1 /* CurvedTabBar.swift in Sources */,
 				EBB71A8828D16C2D00309BB1 /* SceneDelegate.swift in Sources */,
+				EBB71AA328D1759F00309BB1 /* CustomTabBarItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,6 +406,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBB71AA428D175EB00309BB1 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBB71AA528D175EB00309BB1 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBB71AA428D175EB00309BB1 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EBB71A7A28D16C2D00309BB1 /* Project object */;
 }
