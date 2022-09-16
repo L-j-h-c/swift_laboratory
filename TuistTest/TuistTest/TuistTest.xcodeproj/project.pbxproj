@@ -1,0 +1,1119 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		176DD959181454EDD47D23A5 /* TuistTestKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D2A70B2C5ED96A0DCC8412 /* TuistTestKit.swift */; };
+		3974FBDFFE473BF27E9EE6AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956D626F790341BF17B6AF5C /* LaunchScreen.storyboard */; };
+		691B1704D46D8BCE10919294 /* TuistTestUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ADAEC60BE686499388302D72 /* TuistTestUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		76EFED2435C87A054A1EBFF2 /* TuistTestKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3AAFD2CD3F9BBDDF2DE645 /* TuistTestKitTests.swift */; };
+		822961DCCAA576AA8BB754F2 /* TuistTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF16338451D54D14C093813 /* TuistTestKit.framework */; };
+		A74C5A0976CC73E1E1024CFC /* TuistTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCF16338451D54D14C093813 /* TuistTestKit.framework */; };
+		A77F5BF038DDE5C9BFAE4B14 /* TuistTestKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BCF16338451D54D14C093813 /* TuistTestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF59FA745DD38007E1CFD0C9 /* TuistTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59187CAE817C19B9B4F71858 /* TuistTestUITests.swift */; };
+		C1B54EFE5B5C32D906F9D1DB /* TuistTestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAEC60BE686499388302D72 /* TuistTestUI.framework */; };
+		C35579C884A973A0870AEA2E /* TuistBundle+TuistTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8291555AC91CD32AD561576 /* TuistBundle+TuistTest.swift */; };
+		D398A1E0A8B296FB4CDD1040 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F16546BDC01015A310FA1C6 /* AppTests.swift */; };
+		EDB4A776BC498B179F516B59 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C077C736CD373A68871795C6 /* AppDelegate.swift */; };
+		EDDA70210E627E6EB1978FCA /* TuistTestUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADAEC60BE686499388302D72 /* TuistTestUI.framework */; };
+		F5BE5BF98B658CD8470733A0 /* TuistTestUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DEA319AFC8A02460127C36A /* TuistTestUI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09B272DAC85A6B566D4054E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9085A6C93F9597A557227F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B45266AC0919C3693C81E5A;
+			remoteInfo = TuistTestUI;
+		};
+		556F363F4AB6DEB977D2CF85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9085A6C93F9597A557227F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD0451E09D4942CFA9F7315;
+			remoteInfo = TuistTestKit;
+		};
+		66E8ABAD7EDFE83B916D2D7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9085A6C93F9597A557227F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AD0451E09D4942CFA9F7315;
+			remoteInfo = TuistTestKit;
+		};
+		8B75B63156854928348F312C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9085A6C93F9597A557227F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B45266AC0919C3693C81E5A;
+			remoteInfo = TuistTestUI;
+		};
+		8BD4B63703766599A49D0DCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9085A6C93F9597A557227F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85702F57820D30608F15DAF;
+			remoteInfo = TuistTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		15BF649FFC122F0FAA5F0F01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A88A5D631B48D7D8C5D14BA1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A77F5BF038DDE5C9BFAE4B14 /* TuistTestKit.framework in Embed Frameworks */,
+				691B1704D46D8BCE10919294 /* TuistTestUI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE2CE45970661FBC711039E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E73B442AFC8FB7D42405A8B1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2F6C351A3A76E8B01554D9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD4F7E4A04444DF6CA3D6AEA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0DEA319AFC8A02460127C36A /* TuistTestUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistTestUI.swift; sourceTree = "<group>"; };
+		11D2A70B2C5ED96A0DCC8412 /* TuistTestKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistTestKit.swift; sourceTree = "<group>"; };
+		2C0D197551BE366F8F27309A /* TuistTestUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTestUITests-Info.plist"; sourceTree = "<group>"; };
+		57C7622C963DA50612B60BF3 /* TuistTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuistTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59187CAE817C19B9B4F71858 /* TuistTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistTestUITests.swift; sourceTree = "<group>"; };
+		5C3CF4C2658D81699C8A131F /* TuistTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuistTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F16546BDC01015A310FA1C6 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		6233B4463C7599F592EF5589 /* TuistTestKit-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTestKit-Info.plist"; sourceTree = "<group>"; };
+		62E37E8F67EE898CB5B12945 /* TuistTestKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTestKitTests-Info.plist"; sourceTree = "<group>"; };
+		75871F5C03DD53C1A167991E /* TuistTestUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTestUI-Info.plist"; sourceTree = "<group>"; };
+		771D5F4C4A0DF9189378F55E /* TuistTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTestTests-Info.plist"; sourceTree = "<group>"; };
+		956D626F790341BF17B6AF5C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A265E3AD8483925672D96935 /* TuistTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "TuistTest-Info.plist"; sourceTree = "<group>"; };
+		ADAEC60BE686499388302D72 /* TuistTestUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuistTestUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3AAFD2CD3F9BBDDF2DE645 /* TuistTestKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TuistTestKitTests.swift; sourceTree = "<group>"; };
+		BCF16338451D54D14C093813 /* TuistTestKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TuistTestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C077C736CD373A68871795C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB8E2E86F62262382155E7ED /* TuistTestKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuistTestKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8291555AC91CD32AD561576 /* TuistBundle+TuistTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+TuistTest.swift"; sourceTree = "<group>"; };
+		F5702DBB5388131B386B1D44 /* TuistTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TuistTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60FFED46241C04524A46312D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A74C5A0976CC73E1E1024CFC /* TuistTestKit.framework in Frameworks */,
+				C1B54EFE5B5C32D906F9D1DB /* TuistTestUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86BA3A6676E0B8A7B0792A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93ECA4FC7D09207267BE18E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				822961DCCAA576AA8BB754F2 /* TuistTestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AFC1D7C42D7570F91403C7F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF180D55663BC98C3F868F8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C44FCF9C98BE3EF140A7C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EDDA70210E627E6EB1978FCA /* TuistTestUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3C40F485E820385E3CE97268 /* TuistTestUI */ = {
+			isa = PBXGroup;
+			children = (
+				F2388062114194CDBD854509 /* Sources */,
+				4EF447BEFC581F7B032C294D /* Tests */,
+			);
+			path = TuistTestUI;
+			sourceTree = "<group>";
+		};
+		3EF5F3727205DFCADCE6AC0C /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				F9051D17D6A48C7914658AAD /* TuistTest */,
+				D16FA70656342D0BFA823EBE /* TuistTestKit */,
+				3C40F485E820385E3CE97268 /* TuistTestUI */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		4EF447BEFC581F7B032C294D /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				59187CAE817C19B9B4F71858 /* TuistTestUITests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		52F3F3F967092DA37D81709C /* Project */ = {
+			isa = PBXGroup;
+			children = (
+				FCE999537E5E8399E11A34C2 /* Derived */,
+				3EF5F3727205DFCADCE6AC0C /* Targets */,
+			);
+			name = Project;
+			sourceTree = "<group>";
+		};
+		59A6D62ADD0CADC669BBD370 = {
+			isa = PBXGroup;
+			children = (
+				52F3F3F967092DA37D81709C /* Project */,
+				A52C06CEC51C56B25DB42043 /* Frameworks */,
+				81DC09CD1D47DAF2FB2CA2B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		73C29D6C599E32241B01070E /* InfoPlists */ = {
+			isa = PBXGroup;
+			children = (
+				A265E3AD8483925672D96935 /* TuistTest-Info.plist */,
+				6233B4463C7599F592EF5589 /* TuistTestKit-Info.plist */,
+				62E37E8F67EE898CB5B12945 /* TuistTestKitTests-Info.plist */,
+				771D5F4C4A0DF9189378F55E /* TuistTestTests-Info.plist */,
+				75871F5C03DD53C1A167991E /* TuistTestUI-Info.plist */,
+				2C0D197551BE366F8F27309A /* TuistTestUITests-Info.plist */,
+			);
+			path = InfoPlists;
+			sourceTree = "<group>";
+		};
+		7C8CEC886D4ED72A8B341087 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				11D2A70B2C5ED96A0DCC8412 /* TuistTestKit.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		81DC09CD1D47DAF2FB2CA2B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C3CF4C2658D81699C8A131F /* TuistTest.app */,
+				BCF16338451D54D14C093813 /* TuistTestKit.framework */,
+				DB8E2E86F62262382155E7ED /* TuistTestKitTests.xctest */,
+				57C7622C963DA50612B60BF3 /* TuistTestTests.xctest */,
+				ADAEC60BE686499388302D72 /* TuistTestUI.framework */,
+				F5702DBB5388131B386B1D44 /* TuistTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		917A9C0A51B08619DB5F0D38 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				956D626F790341BF17B6AF5C /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A3C13DCDA60319C8D01EE129 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E8291555AC91CD32AD561576 /* TuistBundle+TuistTest.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A52C06CEC51C56B25DB42043 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA0CAB1BCEC6CBEAFC176A87 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BB3AAFD2CD3F9BBDDF2DE645 /* TuistTestKitTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C8151F477D92766A54F170B1 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C077C736CD373A68871795C6 /* AppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CF01FC7CE949448ED3CFA8FB /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5F16546BDC01015A310FA1C6 /* AppTests.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		D16FA70656342D0BFA823EBE /* TuistTestKit */ = {
+			isa = PBXGroup;
+			children = (
+				7C8CEC886D4ED72A8B341087 /* Sources */,
+				AA0CAB1BCEC6CBEAFC176A87 /* Tests */,
+			);
+			path = TuistTestKit;
+			sourceTree = "<group>";
+		};
+		F2388062114194CDBD854509 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0DEA319AFC8A02460127C36A /* TuistTestUI.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F9051D17D6A48C7914658AAD /* TuistTest */ = {
+			isa = PBXGroup;
+			children = (
+				917A9C0A51B08619DB5F0D38 /* Resources */,
+				C8151F477D92766A54F170B1 /* Sources */,
+				CF01FC7CE949448ED3CFA8FB /* Tests */,
+			);
+			path = TuistTest;
+			sourceTree = "<group>";
+		};
+		FCE999537E5E8399E11A34C2 /* Derived */ = {
+			isa = PBXGroup;
+			children = (
+				73C29D6C599E32241B01070E /* InfoPlists */,
+				A3C13DCDA60319C8D01EE129 /* Sources */,
+			);
+			path = Derived;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B45266AC0919C3693C81E5A /* TuistTestUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DAC17531573C4A16E6AB19A /* Build configuration list for PBXNativeTarget "TuistTestUI" */;
+			buildPhases = (
+				CF81215537947864666FA13E /* Sources */,
+				0A76E6505562F27D290B20F3 /* Resources */,
+				15BF649FFC122F0FAA5F0F01 /* Embed Frameworks */,
+				AFC1D7C42D7570F91403C7F4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuistTestUI;
+			productName = TuistTestUI;
+			productReference = ADAEC60BE686499388302D72 /* TuistTestUI.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7B690826E7D0CC83DF8CB6DA /* TuistTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B3B07C5A5F93B96EFA79A3 /* Build configuration list for PBXNativeTarget "TuistTestTests" */;
+			buildPhases = (
+				6E2D11C9F03CEDF2E3BFFCF1 /* Sources */,
+				D626B9CFC6A2399E113E115A /* Resources */,
+				E73B442AFC8FB7D42405A8B1 /* Embed Frameworks */,
+				86BA3A6676E0B8A7B0792A83 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D5B46CAD7E194B68DE85331 /* PBXTargetDependency */,
+			);
+			name = TuistTestTests;
+			productName = TuistTestTests;
+			productReference = 57C7622C963DA50612B60BF3 /* TuistTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AD0451E09D4942CFA9F7315 /* TuistTestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE660166643014C008498C4C /* Build configuration list for PBXNativeTarget "TuistTestKit" */;
+			buildPhases = (
+				CA033770DFF9FDD33EA53975 /* Sources */,
+				3C3DFA9F634EA8EBD353BD3C /* Resources */,
+				FD4F7E4A04444DF6CA3D6AEA /* Embed Frameworks */,
+				EF180D55663BC98C3F868F8B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TuistTestKit;
+			productName = TuistTestKit;
+			productReference = BCF16338451D54D14C093813 /* TuistTestKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE7CD79BDD2416638F8B296E /* TuistTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB0C5F31D0DCBF0474261BE7 /* Build configuration list for PBXNativeTarget "TuistTestUITests" */;
+			buildPhases = (
+				47C900B09FCF3810E378F627 /* Sources */,
+				5F8CB012C9174D8BBDCF9798 /* Resources */,
+				BE2CE45970661FBC711039E2 /* Embed Frameworks */,
+				F6C44FCF9C98BE3EF140A7C4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6B3C57B9100DBCD6433E7D8A /* PBXTargetDependency */,
+			);
+			name = TuistTestUITests;
+			productName = TuistTestUITests;
+			productReference = F5702DBB5388131B386B1D44 /* TuistTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F85702F57820D30608F15DAF /* TuistTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E078E5159AEBB1ECA14570A /* Build configuration list for PBXNativeTarget "TuistTest" */;
+			buildPhases = (
+				17CBA6CE83406E35D164274A /* Sources */,
+				C598B504BF21084B0CC189D3 /* Resources */,
+				A88A5D631B48D7D8C5D14BA1 /* Embed Frameworks */,
+				60FFED46241C04524A46312D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F2F09E25692AB46F48D99BC1 /* PBXTargetDependency */,
+				29FEDC06CA9C1790B3469926 /* PBXTargetDependency */,
+			);
+			name = TuistTest;
+			productName = TuistTest;
+			productReference = 5C3CF4C2658D81699C8A131F /* TuistTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA239AA721929C4837E53DDE /* TuistTestKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B8AE6F27BB9CC446E7C0BFD /* Build configuration list for PBXNativeTarget "TuistTestKitTests" */;
+			buildPhases = (
+				F1973241A71892E0E6A0A4EE /* Sources */,
+				63172CF6F72184D4C3D47A1B /* Resources */,
+				F2F6C351A3A76E8B01554D9B /* Embed Frameworks */,
+				93ECA4FC7D09207267BE18E5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E29A775EAD86B9B027D24141 /* PBXTargetDependency */,
+			);
+			name = TuistTestKitTests;
+			productName = TuistTestKitTests;
+			productReference = DB8E2E86F62262382155E7ED /* TuistTestKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9085A6C93F9597A557227F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = tuist.io;
+				TargetAttributes = {
+					7B690826E7D0CC83DF8CB6DA = {
+						TestTargetID = F85702F57820D30608F15DAF;
+					};
+				};
+			};
+			buildConfigurationList = 664D10FC4C491766A297AE36 /* Build configuration list for PBXProject "TuistTest" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 59A6D62ADD0CADC669BBD370;
+			productRefGroup = 81DC09CD1D47DAF2FB2CA2B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F85702F57820D30608F15DAF /* TuistTest */,
+				7B690826E7D0CC83DF8CB6DA /* TuistTestTests */,
+				9AD0451E09D4942CFA9F7315 /* TuistTestKit */,
+				FA239AA721929C4837E53DDE /* TuistTestKitTests */,
+				3B45266AC0919C3693C81E5A /* TuistTestUI */,
+				CE7CD79BDD2416638F8B296E /* TuistTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A76E6505562F27D290B20F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C3DFA9F634EA8EBD353BD3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F8CB012C9174D8BBDCF9798 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63172CF6F72184D4C3D47A1B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C598B504BF21084B0CC189D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3974FBDFFE473BF27E9EE6AD /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D626B9CFC6A2399E113E115A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		17CBA6CE83406E35D164274A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C35579C884A973A0870AEA2E /* TuistBundle+TuistTest.swift in Sources */,
+				EDB4A776BC498B179F516B59 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47C900B09FCF3810E378F627 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF59FA745DD38007E1CFD0C9 /* TuistTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E2D11C9F03CEDF2E3BFFCF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D398A1E0A8B296FB4CDD1040 /* AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA033770DFF9FDD33EA53975 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				176DD959181454EDD47D23A5 /* TuistTestKit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF81215537947864666FA13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5BE5BF98B658CD8470733A0 /* TuistTestUI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1973241A71892E0E6A0A4EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76EFED2435C87A054A1EBFF2 /* TuistTestKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D5B46CAD7E194B68DE85331 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistTest;
+			target = F85702F57820D30608F15DAF /* TuistTest */;
+			targetProxy = 8BD4B63703766599A49D0DCE /* PBXContainerItemProxy */;
+		};
+		29FEDC06CA9C1790B3469926 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistTestUI;
+			target = 3B45266AC0919C3693C81E5A /* TuistTestUI */;
+			targetProxy = 09B272DAC85A6B566D4054E8 /* PBXContainerItemProxy */;
+		};
+		6B3C57B9100DBCD6433E7D8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistTestUI;
+			target = 3B45266AC0919C3693C81E5A /* TuistTestUI */;
+			targetProxy = 8B75B63156854928348F312C /* PBXContainerItemProxy */;
+		};
+		E29A775EAD86B9B027D24141 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistTestKit;
+			target = 9AD0451E09D4942CFA9F7315 /* TuistTestKit */;
+			targetProxy = 556F363F4AB6DEB977D2CF85 /* PBXContainerItemProxy */;
+		};
+		F2F09E25692AB46F48D99BC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TuistTestKit;
+			target = 9AD0451E09D4942CFA9F7315 /* TuistTestKit */;
+			targetProxy = 66E8ABAD7EDFE83B916D2D7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07BABB149C9A36A1D8A2B344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestKitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestKitTests;
+				PRODUCT_NAME = TuistTestKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		17A36DEFB495669E2684B7A8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestTests;
+				PRODUCT_NAME = TuistTestTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuistTest.app/TuistTest";
+				TEST_TARGET_NAME = TuistTest;
+			};
+			name = Debug;
+		};
+		2A5AA626F913781DADDAAE17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestUI;
+				PRODUCT_NAME = TuistTestUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80B83D39036BD09640FE5AF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		87780CCCAD0D7171A5146014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestKit;
+				PRODUCT_NAME = TuistTestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		928EC7661B00332C9D8B8E45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestKitTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestKitTests;
+				PRODUCT_NAME = TuistTestKitTests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B08BFB791837597D3713487A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTest-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTest;
+				PRODUCT_NAME = TuistTest;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B5C35A688B3A97163805CD86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestUI-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestUI;
+				PRODUCT_NAME = TuistTestUI;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B5F8BF5029F7A997BB29E0A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestKit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestKit;
+				PRODUCT_NAME = TuistTestKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D288066284318FBD21B55DFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8C01DE017D405BFCF03EE47 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestUITests;
+				PRODUCT_NAME = TuistTestUITests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E3A95ED87B2CAE488CF876B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestTests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestTests;
+				PRODUCT_NAME = TuistTestTests;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TuistTest.app/TuistTest";
+				TEST_TARGET_NAME = TuistTest;
+			};
+			name = Release;
+		};
+		EAEDB5A3B8B854077E57A609 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTest-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTest;
+				PRODUCT_NAME = TuistTest;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC65437A9E94BD9CC61A6C36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Derived/InfoPlists/TuistTestUITests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.tuist.TuistTestUITests;
+				PRODUCT_NAME = TuistTestUITests;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_COMPILATION_MODE = singlefile;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B8AE6F27BB9CC446E7C0BFD /* Build configuration list for PBXNativeTarget "TuistTestKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				928EC7661B00332C9D8B8E45 /* Debug */,
+				07BABB149C9A36A1D8A2B344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DAC17531573C4A16E6AB19A /* Build configuration list for PBXNativeTarget "TuistTestUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A5AA626F913781DADDAAE17 /* Debug */,
+				B5C35A688B3A97163805CD86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E078E5159AEBB1ECA14570A /* Build configuration list for PBXNativeTarget "TuistTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B08BFB791837597D3713487A /* Debug */,
+				EAEDB5A3B8B854077E57A609 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		664D10FC4C491766A297AE36 /* Build configuration list for PBXProject "TuistTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80B83D39036BD09640FE5AF1 /* Debug */,
+				D288066284318FBD21B55DFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B3B07C5A5F93B96EFA79A3 /* Build configuration list for PBXNativeTarget "TuistTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17A36DEFB495669E2684B7A8 /* Debug */,
+				E3A95ED87B2CAE488CF876B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE660166643014C008498C4C /* Build configuration list for PBXNativeTarget "TuistTestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87780CCCAD0D7171A5146014 /* Debug */,
+				B5F8BF5029F7A997BB29E0A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB0C5F31D0DCBF0474261BE7 /* Build configuration list for PBXNativeTarget "TuistTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC65437A9E94BD9CC61A6C36 /* Debug */,
+				D8C01DE017D405BFCF03EE47 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9085A6C93F9597A557227F8 /* Project object */;
+}
