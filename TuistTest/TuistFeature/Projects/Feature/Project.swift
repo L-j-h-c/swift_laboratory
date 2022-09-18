@@ -13,7 +13,8 @@ let project = Project.makeModule(
     product: .staticFramework,
     dependencies: [
         .project(target: "Data", path: .relativeToRoot("Projects/Data")),
-        .project(target: "Core", path: .relativeToRoot("Projects/Core"))
+        .project(target: "Core", path: .relativeToRoot("Projects/Core")),
+        .project(target: "DesignSystem", path: .relativeToRoot("Projects/DesignSystem"))
     ],
     resources: ["Resources/**"]
 )

@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Feature
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
@@ -16,7 +18,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         willConnectTo session: UISceneSession,
         options connectionOptions: UIScene.ConnectionOptions
     ) {
-        guard let scene = (scene as? UIWindowScene) else { return }
+        guard let windowScene = (scene as? UIWindowScene) else { return }
+        let rootViewController = StartViewController()
+        let window = UIWindow(windowScene: windowScene)
+        window.rootViewController = rootViewController
+        self.window = window
+        window.backgroundColor = .white
+        window.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {}
