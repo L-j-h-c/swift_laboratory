@@ -56,6 +56,27 @@ public extension Project {
             schemes: schemes
         )
     }
+    
+    static let baseinfoPlist: [String: InfoPlist.Value] = [
+        "CFBundleShortVersionString": "1.0",
+        "CFBundleVersion": "1",
+        "UILaunchStoryboardName": "LaunchScreen",
+        "LSApplicationQueriesSchemes": ["kakaokompassauth", "kakaolink"],
+        "CFBundleURLTypes": ["CFBundleURLSchemes": ["kakao$(KAKAO_APP_KEY)"]],
+        "UIApplicationSceneManifest": [
+            "UIApplicationSupportsMultipleScenes": false,
+            "UISceneConfigurations": [
+                "UIWindowSceneSessionRoleApplication": [
+                    [
+                        "UISceneConfigurationName": "Default Configuration",
+                        "UISceneDelegateClassName": "$(PRODUCT_MODULE_NAME).SceneDelegate"
+                    ],
+                ]
+            ]
+        ],
+        "App Transport Security Settings": ["Allow Arbitrary Loads": true],
+        "NSAppTransportSecurity": ["NSAllowsArbitraryLoads": true]
+    ]
 }
 
 extension Scheme {
