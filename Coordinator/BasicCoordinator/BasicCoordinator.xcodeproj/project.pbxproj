@@ -9,12 +9,32 @@
 /* Begin PBXBuildFile section */
 		EBEC22F128DE2F050011595A /* BasicCoordinator.docc in Sources */ = {isa = PBXBuildFile; fileRef = EBEC22F028DE2F050011595A /* BasicCoordinator.docc */; };
 		EBEC22F228DE2F050011595A /* BasicCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEC22EF28DE2F050011595A /* BasicCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBFC658428DE36E1005EA393 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC658328DE36E1005EA393 /* Coordinator.swift */; };
+		EBFC65A528DE3AA1005EA393 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC659F28DE3A08005EA393 /* AppCoordinator.swift */; };
+		EBFC65A628DE3ABC005EA393 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC65A128DE3A08005EA393 /* TabBarCoordinator.swift */; };
+		EBFC65A728DE3ABC005EA393 /* TopRatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC65A228DE3A08005EA393 /* TopRatedViewController.swift */; };
+		EBFC65A828DE3ABC005EA393 /* TopRatedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC65A328DE3A08005EA393 /* TopRatedDetailViewController.swift */; };
+		EBFC65A928DE3ABC005EA393 /* StartCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC65A028DE3A08005EA393 /* StartCoordinator.swift */; };
+		EBFC65AA28DE3AC3005EA393 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC659A28DE3A03005EA393 /* StartViewController.swift */; };
+		EBFC65AB28DE3AC3005EA393 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC659B28DE3A03005EA393 /* TabBarController.swift */; };
+		EBFC65AC28DE3AC3005EA393 /* TopRatedCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC659C28DE3A03005EA393 /* TopRatedCoordinator.swift */; };
+		EBFC65AD28DE3AC3005EA393 /* TopRatedDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFC659D28DE3A03005EA393 /* TopRatedDetailCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBEC22EC28DE2F050011595A /* BasicCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BasicCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC22EF28DE2F050011595A /* BasicCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicCoordinator.h; sourceTree = "<group>"; };
 		EBEC22F028DE2F050011595A /* BasicCoordinator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = BasicCoordinator.docc; sourceTree = "<group>"; };
+		EBFC658328DE36E1005EA393 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EBFC659A28DE3A03005EA393 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		EBFC659B28DE3A03005EA393 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		EBFC659C28DE3A03005EA393 /* TopRatedCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedCoordinator.swift; sourceTree = "<group>"; };
+		EBFC659D28DE3A03005EA393 /* TopRatedDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedDetailCoordinator.swift; sourceTree = "<group>"; };
+		EBFC659F28DE3A08005EA393 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EBFC65A028DE3A08005EA393 /* StartCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCoordinator.swift; sourceTree = "<group>"; };
+		EBFC65A128DE3A08005EA393 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		EBFC65A228DE3A08005EA393 /* TopRatedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedViewController.swift; sourceTree = "<group>"; };
+		EBFC65A328DE3A08005EA393 /* TopRatedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRatedDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +68,41 @@
 			isa = PBXGroup;
 			children = (
 				EBEC22EF28DE2F050011595A /* BasicCoordinator.h */,
+				EBFC658628DE370F005EA393 /* Sources */,
 				EBEC22F028DE2F050011595A /* BasicCoordinator.docc */,
+			);
+			path = BasicCoordinator;
+			sourceTree = "<group>";
+		};
+		EBFC658628DE370F005EA393 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC65A428DE3A08005EA393 /* BasicCoordinator */,
+				EBFC659E28DE3A03005EA393 /* BasicPresentation */,
+				EBFC658328DE36E1005EA393 /* Coordinator.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EBFC659E28DE3A03005EA393 /* BasicPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC659A28DE3A03005EA393 /* StartViewController.swift */,
+				EBFC659B28DE3A03005EA393 /* TabBarController.swift */,
+				EBFC659C28DE3A03005EA393 /* TopRatedCoordinator.swift */,
+				EBFC659D28DE3A03005EA393 /* TopRatedDetailCoordinator.swift */,
+			);
+			path = BasicPresentation;
+			sourceTree = "<group>";
+		};
+		EBFC65A428DE3A08005EA393 /* BasicCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EBFC65A028DE3A08005EA393 /* StartCoordinator.swift */,
+				EBFC65A128DE3A08005EA393 /* TabBarCoordinator.swift */,
+				EBFC65A228DE3A08005EA393 /* TopRatedViewController.swift */,
+				EBFC65A328DE3A08005EA393 /* TopRatedDetailViewController.swift */,
+				EBFC659F28DE3A08005EA393 /* AppCoordinator.swift */,
 			);
 			path = BasicCoordinator;
 			sourceTree = "<group>";
@@ -132,7 +186,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBFC65A528DE3AA1005EA393 /* AppCoordinator.swift in Sources */,
+				EBFC65AA28DE3AC3005EA393 /* StartViewController.swift in Sources */,
+				EBFC658428DE36E1005EA393 /* Coordinator.swift in Sources */,
+				EBFC65AC28DE3AC3005EA393 /* TopRatedCoordinator.swift in Sources */,
+				EBFC65AB28DE3AC3005EA393 /* TabBarController.swift in Sources */,
+				EBFC65A828DE3ABC005EA393 /* TopRatedDetailViewController.swift in Sources */,
+				EBFC65A628DE3ABC005EA393 /* TabBarCoordinator.swift in Sources */,
 				EBEC22F128DE2F050011595A /* BasicCoordinator.docc in Sources */,
+				EBFC65A928DE3ABC005EA393 /* StartCoordinator.swift in Sources */,
+				EBFC65AD28DE3AC3005EA393 /* TopRatedDetailCoordinator.swift in Sources */,
+				EBFC65A728DE3ABC005EA393 /* TopRatedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

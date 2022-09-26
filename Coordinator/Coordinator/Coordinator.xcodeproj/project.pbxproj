@@ -13,7 +13,23 @@
 		EBEC22D628DE2ECA0011595A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEC22D428DE2ECA0011595A /* Main.storyboard */; };
 		EBEC22D828DE2ECB0011595A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBEC22D728DE2ECB0011595A /* Assets.xcassets */; };
 		EBEC22DB28DE2ECB0011595A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBEC22D928DE2ECB0011595A /* LaunchScreen.storyboard */; };
+		EBEC231F28DE34800011595A /* BasicCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEC231E28DE34800011595A /* BasicCoordinator.framework */; };
+		EBEC232028DE34800011595A /* BasicCoordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBEC231E28DE34800011595A /* BasicCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EBEC232128DE34810011595A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EBEC232028DE34800011595A /* BasicCoordinator.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EBEC22CB28DE2ECA0011595A /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		EBEC22D728DE2ECB0011595A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBEC22DA28DE2ECB0011595A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBEC22DC28DE2ECB0011595A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBEC231E28DE34800011595A /* BasicCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BasicCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEC231F28DE34800011595A /* BasicCoordinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				EBEC22CD28DE2ECA0011595A /* Coordinator */,
 				EBEC22CC28DE2ECA0011595A /* Products */,
+				EBEC231D28DE34800011595A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		EBEC231D28DE34800011595A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBEC231E28DE34800011595A /* BasicCoordinator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				EBEC22C728DE2ECA0011595A /* Sources */,
 				EBEC22C828DE2ECA0011595A /* Frameworks */,
 				EBEC22C928DE2ECA0011595A /* Resources */,
+				EBEC232128DE34810011595A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

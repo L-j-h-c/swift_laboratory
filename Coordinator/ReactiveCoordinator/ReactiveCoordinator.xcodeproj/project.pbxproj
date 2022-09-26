@@ -28,6 +28,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB050F1228E238F800448B58 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		EBEC22F828DE2F250011595A = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				EBEC230528DE2F250011595A /* ReactiveCoordinator.h */,
+				EB050F1228E238F800448B58 /* Sources */,
 				EBEC230628DE2F250011595A /* ReactiveCoordinator.docc */,
 			);
 			path = ReactiveCoordinator;
