@@ -9,12 +9,44 @@
 /* Begin PBXBuildFile section */
 		EB1C24DA28E54CE300C46B2F /* RouterCoordinator.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */; };
 		EB1C24DB28E54CE300C46B2F /* RouterCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1C24E928E54FF700C46B2F /* CoordinatorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24E828E54FF700C46B2F /* CoordinatorFactory.swift */; };
+		EB1C24EB28E5500800C46B2F /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24EA28E5500800C46B2F /* ViewControllerFactory.swift */; };
+		EB1C24F028E5551C00C46B2F /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24EF28E5551C00C46B2F /* BaseCoordinator.swift */; };
+		EB1C24F228E5555400C46B2F /* DeepLinkOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24F128E5555400C46B2F /* DeepLinkOption.swift */; };
+		EB1C24F428E5557100C46B2F /* LaunchInstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24F328E5557100C46B2F /* LaunchInstructor.swift */; };
+		EB1C24F728E559E500C46B2F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24F628E559E500C46B2F /* Router.swift */; };
+		EB1C24FA28E55A6E00C46B2F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24F928E55A6E00C46B2F /* Coordinator.swift */; };
+		EB1C24FC28E55AA700C46B2F /* CoordinatorFinishOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24FB28E55AA700C46B2F /* CoordinatorFinishOutput.swift */; };
+		EB1C24FF28E5839300C46B2F /* CoordinatorNaviBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24FE28E5839300C46B2F /* CoordinatorNaviBackButton.swift */; };
+		EB1C250128E58BA900C46B2F /* CoordinatorNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250028E58BA900C46B2F /* CoordinatorNavigationController.swift */; };
+		EB1C250928E5913B00C46B2F /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250828E5913B00C46B2F /* DependencyContainer.swift */; };
+		EB1C250C28E591D700C46B2F /* AuthViewControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250B28E591D700C46B2F /* AuthViewControllerFactoryImpl.swift */; };
+		EB1C250E28E591E900C46B2F /* WalktroughViewControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250D28E591E900C46B2F /* WalktroughViewControllerFactoryImpl.swift */; };
+		EB1C251028E5920500C46B2F /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250F28E5920500C46B2F /* ApplicationCoordinator.swift */; };
+		EB1C251228E596FD00C46B2F /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C251128E596FD00C46B2F /* AuthCoordinator.swift */; };
+		EB1C251428E5971B00C46B2F /* WalktroughCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C251328E5971B00C46B2F /* WalktroughCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EB1C24D528E54CE300C46B2F /* RouterCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouterCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterCoordinator.h; sourceTree = "<group>"; };
 		EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RouterCoordinator.docc; sourceTree = "<group>"; };
+		EB1C24E828E54FF700C46B2F /* CoordinatorFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFactory.swift; sourceTree = "<group>"; };
+		EB1C24EA28E5500800C46B2F /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		EB1C24EF28E5551C00C46B2F /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		EB1C24F128E5555400C46B2F /* DeepLinkOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkOption.swift; sourceTree = "<group>"; };
+		EB1C24F328E5557100C46B2F /* LaunchInstructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchInstructor.swift; sourceTree = "<group>"; };
+		EB1C24F628E559E500C46B2F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EB1C24F928E55A6E00C46B2F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EB1C24FB28E55AA700C46B2F /* CoordinatorFinishOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorFinishOutput.swift; sourceTree = "<group>"; };
+		EB1C24FE28E5839300C46B2F /* CoordinatorNaviBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNaviBackButton.swift; sourceTree = "<group>"; };
+		EB1C250028E58BA900C46B2F /* CoordinatorNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorNavigationController.swift; sourceTree = "<group>"; };
+		EB1C250828E5913B00C46B2F /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		EB1C250B28E591D700C46B2F /* AuthViewControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewControllerFactoryImpl.swift; sourceTree = "<group>"; };
+		EB1C250D28E591E900C46B2F /* WalktroughViewControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalktroughViewControllerFactoryImpl.swift; sourceTree = "<group>"; };
+		EB1C250F28E5920500C46B2F /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		EB1C251128E596FD00C46B2F /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		EB1C251328E5971B00C46B2F /* WalktroughCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalktroughCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,10 +79,106 @@
 		EB1C24D728E54CE300C46B2F /* RouterCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				EB1C24E128E54CEF00C46B2F /* Sources */,
 				EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */,
 				EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */,
 			);
 			path = RouterCoordinator;
+			sourceTree = "<group>";
+		};
+		EB1C24E128E54CEF00C46B2F /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24FD28E5837E00C46B2F /* CoordinatorNavigation */,
+				EB1C24EC28E5549800C46B2F /* Coordinators */,
+				EB1C24E728E54FD400C46B2F /* Factory */,
+				EB1C24E628E54F2000C46B2F /* CoordinatorBase */,
+				EB1C24E528E54F1300C46B2F /* DependencyContainer */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EB1C24E528E54F1300C46B2F /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C250A28E591B300C46B2F /* FactoryImpl */,
+				EB1C250828E5913B00C46B2F /* DependencyContainer.swift */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		EB1C24E628E54F2000C46B2F /* CoordinatorBase */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24F828E55A3D00C46B2F /* Coordinator */,
+				EB1C24F528E559DB00C46B2F /* Router */,
+				EB1C24EE28E554B800C46B2F /* Enums */,
+			);
+			path = CoordinatorBase;
+			sourceTree = "<group>";
+		};
+		EB1C24E728E54FD400C46B2F /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24E828E54FF700C46B2F /* CoordinatorFactory.swift */,
+				EB1C24EA28E5500800C46B2F /* ViewControllerFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		EB1C24EC28E5549800C46B2F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C250F28E5920500C46B2F /* ApplicationCoordinator.swift */,
+				EB1C251128E596FD00C46B2F /* AuthCoordinator.swift */,
+				EB1C251328E5971B00C46B2F /* WalktroughCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		EB1C24EE28E554B800C46B2F /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24F128E5555400C46B2F /* DeepLinkOption.swift */,
+				EB1C24F328E5557100C46B2F /* LaunchInstructor.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		EB1C24F528E559DB00C46B2F /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24F628E559E500C46B2F /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB1C24F828E55A3D00C46B2F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24EF28E5551C00C46B2F /* BaseCoordinator.swift */,
+				EB1C24F928E55A6E00C46B2F /* Coordinator.swift */,
+				EB1C24FB28E55AA700C46B2F /* CoordinatorFinishOutput.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		EB1C24FD28E5837E00C46B2F /* CoordinatorNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C24FE28E5839300C46B2F /* CoordinatorNaviBackButton.swift */,
+				EB1C250028E58BA900C46B2F /* CoordinatorNavigationController.swift */,
+			);
+			path = CoordinatorNavigation;
+			sourceTree = "<group>";
+		};
+		EB1C250A28E591B300C46B2F /* FactoryImpl */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C250B28E591D700C46B2F /* AuthViewControllerFactoryImpl.swift */,
+				EB1C250D28E591E900C46B2F /* WalktroughViewControllerFactoryImpl.swift */,
+			);
+			path = FactoryImpl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,7 +260,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1C24FA28E55A6E00C46B2F /* Coordinator.swift in Sources */,
+				EB1C24EB28E5500800C46B2F /* ViewControllerFactory.swift in Sources */,
+				EB1C250128E58BA900C46B2F /* CoordinatorNavigationController.swift in Sources */,
 				EB1C24DA28E54CE300C46B2F /* RouterCoordinator.docc in Sources */,
+				EB1C24FF28E5839300C46B2F /* CoordinatorNaviBackButton.swift in Sources */,
+				EB1C251028E5920500C46B2F /* ApplicationCoordinator.swift in Sources */,
+				EB1C251228E596FD00C46B2F /* AuthCoordinator.swift in Sources */,
+				EB1C250E28E591E900C46B2F /* WalktroughViewControllerFactoryImpl.swift in Sources */,
+				EB1C24FC28E55AA700C46B2F /* CoordinatorFinishOutput.swift in Sources */,
+				EB1C24F228E5555400C46B2F /* DeepLinkOption.swift in Sources */,
+				EB1C24F728E559E500C46B2F /* Router.swift in Sources */,
+				EB1C24F428E5557100C46B2F /* LaunchInstructor.swift in Sources */,
+				EB1C24E928E54FF700C46B2F /* CoordinatorFactory.swift in Sources */,
+				EB1C250928E5913B00C46B2F /* DependencyContainer.swift in Sources */,
+				EB1C250C28E591D700C46B2F /* AuthViewControllerFactoryImpl.swift in Sources */,
+				EB1C24F028E5551C00C46B2F /* BaseCoordinator.swift in Sources */,
+				EB1C251428E5971B00C46B2F /* WalktroughCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
