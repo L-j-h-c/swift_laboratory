@@ -89,8 +89,8 @@
 			children = (
 				EBFC659A28DE3A03005EA393 /* StartViewController.swift */,
 				EBFC659B28DE3A03005EA393 /* TabBarController.swift */,
-				EBFC659C28DE3A03005EA393 /* TopRatedCoordinator.swift */,
-				EBFC659D28DE3A03005EA393 /* TopRatedDetailCoordinator.swift */,
+				EBFC65A228DE3A08005EA393 /* TopRatedViewController.swift */,
+				EBFC65A328DE3A08005EA393 /* TopRatedDetailViewController.swift */,
 			);
 			path = BasicPresentation;
 			sourceTree = "<group>";
@@ -98,11 +98,11 @@
 		EBFC65A428DE3A08005EA393 /* BasicCoordinator */ = {
 			isa = PBXGroup;
 			children = (
+				EBFC659F28DE3A08005EA393 /* AppCoordinator.swift */,
 				EBFC65A028DE3A08005EA393 /* StartCoordinator.swift */,
 				EBFC65A128DE3A08005EA393 /* TabBarCoordinator.swift */,
-				EBFC65A228DE3A08005EA393 /* TopRatedViewController.swift */,
-				EBFC65A328DE3A08005EA393 /* TopRatedDetailViewController.swift */,
-				EBFC659F28DE3A08005EA393 /* AppCoordinator.swift */,
+				EBFC659C28DE3A03005EA393 /* TopRatedCoordinator.swift */,
+				EBFC659D28DE3A03005EA393 /* TopRatedDetailCoordinator.swift */,
 			);
 			path = BasicCoordinator;
 			sourceTree = "<group>";

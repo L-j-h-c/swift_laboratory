@@ -7,24 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EB1C250328E58E6E00C46B2F /* ReactiveCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250228E58E6E00C46B2F /* ReactiveCoordinator.swift */; };
-		EB1C250528E58E9D00C46B2F /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250428E58E9D00C46B2F /* AppCoordinator.swift */; };
-		EB1C250728E58EC900C46B2F /* HolidayCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C250628E58EC900C46B2F /* HolidayCoordinator.swift */; };
-		EBEC230728DE2F250011595A /* ReactiveCoordinator.docc in Sources */ = {isa = PBXBuildFile; fileRef = EBEC230628DE2F250011595A /* ReactiveCoordinator.docc */; };
-		EBEC230828DE2F250011595A /* ReactiveCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = EBEC230528DE2F250011595A /* ReactiveCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB1C24DA28E54CE300C46B2F /* RouterCoordinator.docc in Sources */ = {isa = PBXBuildFile; fileRef = EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */; };
+		EB1C24DB28E54CE300C46B2F /* RouterCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		EB1C250228E58E6E00C46B2F /* ReactiveCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveCoordinator.swift; sourceTree = "<group>"; };
-		EB1C250428E58E9D00C46B2F /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		EB1C250628E58EC900C46B2F /* HolidayCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayCoordinator.swift; sourceTree = "<group>"; };
-		EBEC230228DE2F250011595A /* ReactiveCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EBEC230528DE2F250011595A /* ReactiveCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveCoordinator.h; sourceTree = "<group>"; };
-		EBEC230628DE2F250011595A /* ReactiveCoordinator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = ReactiveCoordinator.docc; sourceTree = "<group>"; };
+		EB1C24D528E54CE300C46B2F /* RouterCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RouterCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterCoordinator.h; sourceTree = "<group>"; };
+		EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = RouterCoordinator.docc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EBEC22FF28DE2F250011595A /* Frameworks */ = {
+		EB1C24D228E54CE300C46B2F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -34,89 +28,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EB050F1228E238F800448B58 /* Sources */ = {
+		EB1C24CB28E54CE300C46B2F = {
 			isa = PBXGroup;
 			children = (
-				EB1C250228E58E6E00C46B2F /* ReactiveCoordinator.swift */,
-				EB1C250428E58E9D00C46B2F /* AppCoordinator.swift */,
-				EB1C250628E58EC900C46B2F /* HolidayCoordinator.swift */,
-			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		EBEC22F828DE2F250011595A = {
-			isa = PBXGroup;
-			children = (
-				EBEC230428DE2F250011595A /* ReactiveCoordinator */,
-				EBEC230328DE2F250011595A /* Products */,
+				EB1C24D728E54CE300C46B2F /* RouterCoordinator */,
+				EB1C24D628E54CE300C46B2F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		EBEC230328DE2F250011595A /* Products */ = {
+		EB1C24D628E54CE300C46B2F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EBEC230228DE2F250011595A /* ReactiveCoordinator.framework */,
+				EB1C24D528E54CE300C46B2F /* RouterCoordinator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		EBEC230428DE2F250011595A /* ReactiveCoordinator */ = {
+		EB1C24D728E54CE300C46B2F /* RouterCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				EBEC230528DE2F250011595A /* ReactiveCoordinator.h */,
-				EB050F1228E238F800448B58 /* Sources */,
-				EBEC230628DE2F250011595A /* ReactiveCoordinator.docc */,
+				EB1C24D828E54CE300C46B2F /* RouterCoordinator.h */,
+				EB1C24D928E54CE300C46B2F /* RouterCoordinator.docc */,
 			);
-			path = ReactiveCoordinator;
+			path = RouterCoordinator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EBEC22FD28DE2F250011595A /* Headers */ = {
+		EB1C24D028E54CE300C46B2F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBEC230828DE2F250011595A /* ReactiveCoordinator.h in Headers */,
+				EB1C24DB28E54CE300C46B2F /* RouterCoordinator.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EBEC230128DE2F250011595A /* ReactiveCoordinator */ = {
+		EB1C24D428E54CE300C46B2F /* RouterCoordinator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EBEC230B28DE2F250011595A /* Build configuration list for PBXNativeTarget "ReactiveCoordinator" */;
+			buildConfigurationList = EB1C24DE28E54CE300C46B2F /* Build configuration list for PBXNativeTarget "RouterCoordinator" */;
 			buildPhases = (
-				EBEC22FD28DE2F250011595A /* Headers */,
-				EBEC22FE28DE2F250011595A /* Sources */,
-				EBEC22FF28DE2F250011595A /* Frameworks */,
-				EBEC230028DE2F250011595A /* Resources */,
+				EB1C24D028E54CE300C46B2F /* Headers */,
+				EB1C24D128E54CE300C46B2F /* Sources */,
+				EB1C24D228E54CE300C46B2F /* Frameworks */,
+				EB1C24D328E54CE300C46B2F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReactiveCoordinator;
-			productName = ReactiveCoordinator;
-			productReference = EBEC230228DE2F250011595A /* ReactiveCoordinator.framework */;
+			name = RouterCoordinator;
+			productName = RouterCoordinator;
+			productReference = EB1C24D528E54CE300C46B2F /* RouterCoordinator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		EBEC22F928DE2F250011595A /* Project object */ = {
+		EB1C24CC28E54CE300C46B2F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
-					EBEC230128DE2F250011595A = {
+					EB1C24D428E54CE300C46B2F = {
 						CreatedOnToolsVersion = 14.0;
 					};
 				};
 			};
-			buildConfigurationList = EBEC22FC28DE2F250011595A /* Build configuration list for PBXProject "ReactiveCoordinator" */;
+			buildConfigurationList = EB1C24CF28E54CE300C46B2F /* Build configuration list for PBXProject "RouterCoordinator" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,18 +107,18 @@
 				en,
 				Base,
 			);
-			mainGroup = EBEC22F828DE2F250011595A;
-			productRefGroup = EBEC230328DE2F250011595A /* Products */;
+			mainGroup = EB1C24CB28E54CE300C46B2F;
+			productRefGroup = EB1C24D628E54CE300C46B2F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EBEC230128DE2F250011595A /* ReactiveCoordinator */,
+				EB1C24D428E54CE300C46B2F /* RouterCoordinator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		EBEC230028DE2F250011595A /* Resources */ = {
+		EB1C24D328E54CE300C46B2F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,21 +128,18 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		EBEC22FE28DE2F250011595A /* Sources */ = {
+		EB1C24D128E54CE300C46B2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB1C250528E58E9D00C46B2F /* AppCoordinator.swift in Sources */,
-				EB1C250728E58EC900C46B2F /* HolidayCoordinator.swift in Sources */,
-				EBEC230728DE2F250011595A /* ReactiveCoordinator.docc in Sources */,
-				EB1C250328E58E6E00C46B2F /* ReactiveCoordinator.swift in Sources */,
+				EB1C24DA28E54CE300C46B2F /* RouterCoordinator.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		EBEC230928DE2F250011595A /* Debug */ = {
+		EB1C24DC28E54CE300C46B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -222,7 +202,7 @@
 			};
 			name = Debug;
 		};
-		EBEC230A28DE2F250011595A /* Release */ = {
+		EB1C24DD28E54CE300C46B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -279,7 +259,7 @@
 			};
 			name = Release;
 		};
-		EBEC230C28DE2F250011595A /* Debug */ = {
+		EB1C24DF28E54CE300C46B2F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -298,7 +278,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seolagir.ReactiveCoordinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seolagir.RouterCoordinator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -307,7 +287,7 @@
 			};
 			name = Debug;
 		};
-		EBEC230D28DE2F250011595A /* Release */ = {
+		EB1C24E028E54CE300C46B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -326,7 +306,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.seolagir.ReactiveCoordinator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.seolagir.RouterCoordinator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -338,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EBEC22FC28DE2F250011595A /* Build configuration list for PBXProject "ReactiveCoordinator" */ = {
+		EB1C24CF28E54CE300C46B2F /* Build configuration list for PBXProject "RouterCoordinator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBEC230928DE2F250011595A /* Debug */,
-				EBEC230A28DE2F250011595A /* Release */,
+				EB1C24DC28E54CE300C46B2F /* Debug */,
+				EB1C24DD28E54CE300C46B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EBEC230B28DE2F250011595A /* Build configuration list for PBXNativeTarget "ReactiveCoordinator" */ = {
+		EB1C24DE28E54CE300C46B2F /* Build configuration list for PBXNativeTarget "RouterCoordinator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EBEC230C28DE2F250011595A /* Debug */,
-				EBEC230D28DE2F250011595A /* Release */,
+				EB1C24DF28E54CE300C46B2F /* Debug */,
+				EB1C24E028E54CE300C46B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = EBEC22F928DE2F250011595A /* Project object */;
+	rootObject = EB1C24CC28E54CE300C46B2F /* Project object */;
 }

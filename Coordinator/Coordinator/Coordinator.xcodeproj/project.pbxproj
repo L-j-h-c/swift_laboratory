@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EB1C24C928E5439C00C46B2F /* ReactiveCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C24C828E5439C00C46B2F /* ReactiveCoordinator.framework */; };
+		EB1C24CA28E5439C00C46B2F /* ReactiveCoordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C24C828E5439C00C46B2F /* ReactiveCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB1C24E328E54CFB00C46B2F /* RouterCoordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C24E228E54CFB00C46B2F /* RouterCoordinator.framework */; };
+		EB1C24E428E54CFB00C46B2F /* RouterCoordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EB1C24E228E54CFB00C46B2F /* RouterCoordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EBEC22CF28DE2ECA0011595A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC22CE28DE2ECA0011595A /* AppDelegate.swift */; };
 		EBEC22D128DE2ECA0011595A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC22D028DE2ECA0011595A /* SceneDelegate.swift */; };
 		EBEC22D328DE2ECA0011595A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEC22D228DE2ECA0011595A /* ViewController.swift */; };
@@ -24,6 +28,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				EB1C24CA28E5439C00C46B2F /* ReactiveCoordinator.framework in Embed Frameworks */,
+				EB1C24E428E54CFB00C46B2F /* RouterCoordinator.framework in Embed Frameworks */,
 				EBEC232028DE34800011595A /* BasicCoordinator.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -32,6 +38,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		EB1C24C828E5439C00C46B2F /* ReactiveCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ReactiveCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C24E228E54CFB00C46B2F /* RouterCoordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RouterCoordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC22CB28DE2ECA0011595A /* Coordinator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coordinator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBEC22CE28DE2ECA0011595A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBEC22D028DE2ECA0011595A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB1C24C928E5439C00C46B2F /* ReactiveCoordinator.framework in Frameworks */,
+				EB1C24E328E54CFB00C46B2F /* RouterCoordinator.framework in Frameworks */,
 				EBEC231F28DE34800011595A /* BasicCoordinator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +99,8 @@
 		EBEC231D28DE34800011595A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB1C24E228E54CFB00C46B2F /* RouterCoordinator.framework */,
+				EB1C24C828E5439C00C46B2F /* ReactiveCoordinator.framework */,
 				EBEC231E28DE34800011595A /* BasicCoordinator.framework */,
 			);
 			name = Frameworks;

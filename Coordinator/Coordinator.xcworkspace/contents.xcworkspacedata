@@ -5,6 +5,9 @@
       location = "group:Coordinator/Coordinator.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:RouterCoordinator/RouterCoordinator.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:BasicCoordinator/BasicCoordinator.xcodeproj">
    </FileRef>
    <FileRef
