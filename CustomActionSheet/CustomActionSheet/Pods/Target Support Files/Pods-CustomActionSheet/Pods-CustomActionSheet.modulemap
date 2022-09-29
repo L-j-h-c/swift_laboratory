@@ -1,0 +1,6 @@
+framework module Pods_CustomActionSheet {
+  umbrella header "Pods-CustomActionSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}
