@@ -1,29 +1,19 @@
 import ProjectDescription
 import ProjectDescriptionHelpers
-import MyPlugin
+import UtilityPlugin
 
-/*
-                +-------------+
-                |             |
-                |     App     | Contains TuistSharing App target and TuistSharing unit-test target
-                |             |
-         +------+-------------+-------+
-         |         depends on         |
-         |                            |
- +----v-----+                   +-----v-----+
- |          |                   |           |
- |   Kit    |                   |     UI    |   Two independent frameworks to share code and start modularising your app
- |          |                   |           |
- +----------+                   +-----------+
-
- */
-
-// MARK: - Project
-
-// Local plugin loaded
-let localHelper = LocalHelper(name: "MyPlugin")
-
-// Creates our project using a helper function defined in ProjectDescriptionHelpers
-let project = Project.app(name: "TuistSharing",
-                          platform: .iOS,
-                          additionalTargets: [])
+let project = Project.makeModule(
+    name: "sopkaton",
+    platform: .iOS,
+    product: .app,
+    dependencies: [
+        .SPM.SnapKit,
+        .SPM.Kingfisher,
+        .SPM.Then,
+        .SPM.Moya,
+        .SPM.RxSwift,
+        .SPM.RxCocoa
+    ],
+    resources: ["Resources/**"],
+    infoPlist: .extendingDefault(with: Project.baseinfoPlist)
+)

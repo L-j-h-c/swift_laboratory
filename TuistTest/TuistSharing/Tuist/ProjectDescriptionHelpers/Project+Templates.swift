@@ -1,58 +1,123 @@
 import ProjectDescription
+import UtilityPlugin
+import Foundation
 
-/// Project helpers are functions that simplify the way you define your project.
-/// Share code to create targets, settings, dependencies,
-/// Create your own conventions, e.g: a func that makes sure all shared targets are "static frameworks"
-/// See https://docs.tuist.io/guides/helpers/
-
-extension Project {
-    /// Helper function to create the Project for this ExampleApp
-    public static func app(name: String, platform: Platform, additionalTargets: [String]) -> Project {
-        var targets = makeAppTargets(name: name,
-                                     platform: platform,
-                                     dependencies: additionalTargets.map { TargetDependency.target(name: $0) })
-        targets += additionalTargets.flatMap({ makeFrameworkTargets(name: $0, platform: platform) })
-        return Project(name: name,
-                       organizationName: "tuist.io",
-                       targets: targets)
-    }
-
-    // MARK: - Private
-
-    /// Helper function to create a framework target and an associated unit test target
-    private static func makeFrameworkTargets(name: String, platform: Platform) -> [Target] {
-        let sources = Target(name: name,
-                platform: platform,
-                product: .framework,
-                bundleId: "io.tuist.\(name)",
-                infoPlist: .default,
-                sources: ["Sources/**"],
-                resources: [],
-                dependencies: [])
-        return [sources]
-    }
-
-    /// Helper function to create the application target and the unit test target.
-    private static func makeAppTargets(name: String, platform: Platform, dependencies: [TargetDependency]) -> [Target] {
-        let platform: Platform = platform
-        let infoPlist: [String: InfoPlist.Value] = [
-            "CFBundleShortVersionString": "1.0",
-            "CFBundleVersion": "1",
-            "UIMainStoryboardFile": "",
-            "UILaunchStoryboardName": "LaunchScreen"
-            ]
-
-        let mainTarget = Target(
+public extension Project {
+    static func makeModule(
+        name: String,
+        platform: Platform = .iOS,
+        product: Product,
+        packages: [Package] = [],
+        dependencies: [TargetDependency] = [],
+        sources: SourceFilesList = ["Sources/**"],
+        resources: ResourceFileElements? = nil,
+        infoPlist: InfoPlist = .default,
+        hasTest: Bool = false
+    ) -> Project {
+        return project(
             name: name,
             platform: platform,
-            product: .app,
-            bundleId: "io.tuist.\(name)",
-            infoPlist: .extendingDefault(with: infoPlist),
-            sources: ["Sources/**"],
-            resources: ["Resources/**"],
+            product: product,
+            packages: packages,
+            dependencies: dependencies,
+            sources: sources,
+            resources: resources,
+            infoPlist: infoPlist,
+            hasTest: hasTest
+        )
+    }
+}
+
+public extension Project {
+    static func project(
+        name: String,
+        platform: Platform,
+        product: Product,
+        organizationName: String = Environment.organizationName,
+        packages: [Package] = [],
+        deploymentTarget: DeploymentTarget? = Environment.deploymentTarget,
+        dependencies: [TargetDependency] = [],
+        sources: SourceFilesList,
+        resources: ResourceFileElements? = nil,
+        infoPlist: InfoPlist,
+        hasTest: Bool = false
+    ) -> Project {
+        
+        let settings: Settings = .settings(
+            base: product == .app
+                ? .init().setCodeSignManualForApp()
+                : .init().setCodeSignManual(),
+            debug: .init()
+                .setProvisioningDevelopment(),
+            release: .init()
+                .setProvisioningAppstore(),
+            defaultSettings: .recommended)
+        
+        let bundleId = (name == "sopkaton")
+        ? Environment.appBundleId
+        : "\(organizationName).\(name)"
+        
+        let appTarget = Target(
+            name: name,
+            platform: platform,
+            product: product,
+            bundleId: bundleId,
+            deploymentTarget: deploymentTarget,
+            infoPlist: infoPlist,
+            sources: sources,
+            resources: resources,
+            scripts: [],
             dependencies: dependencies
         )
+
+        let schemes: [Scheme] = [.makeScheme(target: .debug, name: name)]
         
-        return [mainTarget]
+        let targets: [Target] = hasTest
+        ? [appTarget, makeTestTarget(name: name)]
+        : [appTarget]
+
+        return Project(
+            name: name,
+            organizationName: organizationName,
+            packages: packages,
+            settings: settings,
+            targets: targets,
+            schemes: schemes
+        )
+    }
+}
+
+public extension Project {
+    static func makeTestTarget(name: String) -> Target {
+        return Target(
+            name: "\(name)Tests",
+            platform: .iOS,
+            product: .unitTests,
+            bundleId: "\(Environment.organizationName)\(name)Tests",
+            deploymentTarget: Environment.deploymentTarget,
+            infoPlist: .default,
+            sources: ["Tests/**"],
+            dependencies: [.target(name: name), .SPM.Nimble, .SPM.Quick]
+        )
+    }
+}
+
+extension Scheme {
+    /// Scheme 생성하는 method
+    static func makeScheme(target: ConfigurationName, name: String) -> Scheme {
+        return Scheme(
+            name: name,
+            shared: true,
+            buildAction: .buildAction(targets: ["\(name)"]),
+            testAction: .targets(
+                ["\(name)Tests"],
+                configuration: target,
+                options: .options(coverage: true, codeCoverageTargets: ["\(name)"])
+            ),
+            runAction: .runAction(configuration: target),
+            archiveAction: .archiveAction(configuration: target),
+            profileAction: .profileAction(configuration: target),
+            analyzeAction: .analyzeAction(configuration: target)
+        )
     }
 }
