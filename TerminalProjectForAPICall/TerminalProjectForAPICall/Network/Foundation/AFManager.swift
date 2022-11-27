@@ -18,7 +18,7 @@ class Managers {
         configuration.timeoutIntervalForRequest = NetworkEnvironment.requestTimeOut
         configuration.timeoutIntervalForResource = NetworkEnvironment.resourceTimeOut
         let eventLogger = APIEventLogger()
-        session = Session(configuration: configuration, eventMonitors: [eventLogger])
+        session = Session(configuration: configuration)
         return session
     }()
 

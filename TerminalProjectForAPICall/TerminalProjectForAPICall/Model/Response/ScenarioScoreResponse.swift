@@ -9,8 +9,8 @@ import Foundation
 
 struct ScenarioScoreResponse: Codable {
     let status: String
-    let efficiencyScore, accuracyScore1: Int
-    let accuracyScore2, score: Double
+    let efficiencyScore, accuracyScore1: String
+    let accuracyScore2, score: String
 
     enum CodingKeys: String, CodingKey {
         case status
