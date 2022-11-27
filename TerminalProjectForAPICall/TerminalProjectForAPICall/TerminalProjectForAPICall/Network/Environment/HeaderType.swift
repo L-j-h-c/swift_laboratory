@@ -10,13 +10,15 @@ import Foundation
 
 public enum HeaderType {
     case `default`
+    case withXAuthToken
     case withToken
     case multiPart
 }
 
 enum HTTPHeaderField: String {
     case contentType = "Content-Type"
-    case authorization = "X-Auth-Token"
+    case xAuth = "X-Auth-Token"
+    case authorization = "Authorization"
 }
 
 enum HeaderContent: String {

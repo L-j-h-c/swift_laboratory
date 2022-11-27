@@ -23,4 +23,7 @@ struct NetworkEnvironment {
     // MARK: - timeOut
     static let requestTimeOut = TimeInterval(10)
     static let resourceTimeOut = TimeInterval(10)
+    
+    // MARK: - Token
+    static var authToken = ""
 }

@@ -8,15 +8,28 @@
 import Foundation
 
 import RxSwift
-
-print("Hello, World!")
+import RxCocoa
 
 let disposeBag = DisposeBag()
 let service = DefaultKakaoService.shared
 
-service.postStart(scenario: 1)
-    .subscribe(onNext: { entity in
+let scenarioStarted = PublishRelay<Void>()
+
+startScenario(scenario: 1)
+
+func startScenario(scenario: Int) {
+    service.postStart(scenario: scenario)
+        .subscribe(onNext: { entity in
+            guard let authKey = entity?.authKey else { return }
+            NetworkEnvironment.authToken = authKey
+        }).disposed(by: disposeBag)
+}
+
+func fetchWaitingLine() {
+    service.fetchWaitngLine()
+        .subscribe(onNext: { entity in
         print(entity)
     }).disposed(by: disposeBag)
+}
 
 RunLoop.main.run()

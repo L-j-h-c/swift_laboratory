@@ -20,9 +20,12 @@
 		EBE2A09929335C4F006BF471 /* GeneralResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08129335C4F006BF471 /* GeneralResponse.swift */; };
 		EBE2A09A29335C4F006BF471 /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08229335C4F006BF471 /* NetworkResult.swift */; };
 		EBE2A09B29335C4F006BF471 /* HeaderType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08329335C4F006BF471 /* HeaderType.swift */; };
-		EBE2A09D29335C4F006BF471 /* DreamWriteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08629335C4F006BF471 /* DreamWriteResponse.swift */; };
+		EBE2A09D29335C4F006BF471 /* WaitingLineResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08629335C4F006BF471 /* WaitingLineResponse.swift */; };
 		EBE2A0A229335C4F006BF471 /* KakaoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A08C29335C4F006BF471 /* KakaoRouter.swift */; };
 		EBE2A0A829336936006BF471 /* PostStartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0A729336936006BF471 /* PostStartResponse.swift */; };
+		EBE2A0AB29336E47006BF471 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = EBE2A0AA29336E47006BF471 /* RxCocoa */; };
+		EBE2A0AD29336E47006BF471 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = EBE2A0AC29336E47006BF471 /* RxRelay */; };
+		EBE2A0AF29336E47006BF471 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBE2A0AE29336E47006BF471 /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,7 +52,7 @@
 		EBE2A08129335C4F006BF471 /* GeneralResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralResponse.swift; sourceTree = "<group>"; };
 		EBE2A08229335C4F006BF471 /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		EBE2A08329335C4F006BF471 /* HeaderType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderType.swift; sourceTree = "<group>"; };
-		EBE2A08629335C4F006BF471 /* DreamWriteResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamWriteResponse.swift; sourceTree = "<group>"; };
+		EBE2A08629335C4F006BF471 /* WaitingLineResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaitingLineResponse.swift; sourceTree = "<group>"; };
 		EBE2A08C29335C4F006BF471 /* KakaoRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoRouter.swift; sourceTree = "<group>"; };
 		EBE2A0A729336936006BF471 /* PostStartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStartResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,8 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE2A0AF29336E47006BF471 /* RxSwift in Frameworks */,
+				EBE2A0AD29336E47006BF471 /* RxRelay in Frameworks */,
 				EBE2A03C2933592D006BF471 /* RxMoya in Frameworks */,
 				EBE2A0382933592D006BF471 /* Moya in Frameworks */,
+				EBE2A0AB29336E47006BF471 /* RxCocoa in Frameworks */,
 				EBE2A03A2933592D006BF471 /* ReactiveMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -108,7 +114,7 @@
 		EBE2A03E29335965006BF471 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EBE2A08629335C4F006BF471 /* DreamWriteResponse.swift */,
+				EBE2A08629335C4F006BF471 /* WaitingLineResponse.swift */,
 				EBE2A0A729336936006BF471 /* PostStartResponse.swift */,
 			);
 			path = Model;
@@ -172,6 +178,9 @@
 				EBE2A0372933592D006BF471 /* Moya */,
 				EBE2A0392933592D006BF471 /* ReactiveMoya */,
 				EBE2A03B2933592D006BF471 /* RxMoya */,
+				EBE2A0AA29336E47006BF471 /* RxCocoa */,
+				EBE2A0AC29336E47006BF471 /* RxRelay */,
+				EBE2A0AE29336E47006BF471 /* RxSwift */,
 			);
 			productName = TerminalProjectForAPICall;
 			productReference = EBE2A02C29335847006BF471 /* TerminalProjectForAPICall */;
@@ -203,6 +212,7 @@
 			mainGroup = EBE2A02329335847006BF471;
 			packageReferences = (
 				EBE2A0362933592D006BF471 /* XCRemoteSwiftPackageReference "Moya" */,
+				EBE2A0A929336E47006BF471 /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = EBE2A02D29335847006BF471 /* Products */;
 			projectDirPath = "";
@@ -229,7 +239,7 @@
 				EBE2A09829335C4F006BF471 /* config.swift in Sources */,
 				EBE2A09229335C4F006BF471 /* EventMonitor.swift in Sources */,
 				EBE2A09629335C4F006BF471 /* KakaoService.swift in Sources */,
-				EBE2A09D29335C4F006BF471 /* DreamWriteResponse.swift in Sources */,
+				EBE2A09D29335C4F006BF471 /* WaitingLineResponse.swift in Sources */,
 				EBE2A09029335C4F006BF471 /* BaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +414,14 @@
 				kind = branch;
 			};
 		};
+		EBE2A0A929336E47006BF471 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -421,6 +439,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = EBE2A0362933592D006BF471 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
+		};
+		EBE2A0AA29336E47006BF471 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBE2A0A929336E47006BF471 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		EBE2A0AC29336E47006BF471 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBE2A0A929336E47006BF471 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		EBE2A0AE29336E47006BF471 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBE2A0A929336E47006BF471 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,12 +6,14 @@
 //  Copyright © 2022 RecorDream. All rights reserved.
 //
 
-import Foundation
+struct WaitingLineResponse: Codable {
+    let waitingLine: [WaitingLine]
 
-public struct DreamWriteResponse: Codable {
-    public let id: String
-    
     enum CodingKeys: String, CodingKey {
-        case id = "_id"
+        case waitingLine = "waiting_line"
     }
+}
+
+struct WaitingLine: Codable {
+    let id, from: Int
 }

@@ -40,9 +40,13 @@ extension BaseRouter {
         case .default:
             request.setValue(HeaderContent.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
             
+        case .withXAuthToken:
+            request.setValue(HeaderContent.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
+            request.setValue(HeaderContent.accessTokenSerial.rawValue, forHTTPHeaderField: HTTPHeaderField.xAuth.rawValue)
+            
         case .withToken:
             request.setValue(HeaderContent.json.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
-            request.setValue(HeaderContent.accessTokenSerial.rawValue, forHTTPHeaderField: HTTPHeaderField.authorization.rawValue)
+            request.setValue(NetworkEnvironment.authToken, forHTTPHeaderField: HTTPHeaderField.authorization.rawValue)
             
         case .multiPart:
             request.setValue(HeaderContent.multiPart.rawValue, forHTTPHeaderField: HTTPHeaderField.contentType.rawValue)
@@ -89,7 +93,7 @@ extension BaseRouter {
     }
     
     var header: HeaderType {
-        return HeaderType.withToken
+        return HeaderType.withXAuthToken
     }
     
     var multipart: MultipartFormData {

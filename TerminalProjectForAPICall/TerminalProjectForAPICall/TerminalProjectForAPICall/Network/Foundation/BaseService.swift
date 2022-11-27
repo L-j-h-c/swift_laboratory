@@ -100,19 +100,16 @@ extension BaseService {
                 switch response.result {
                 case .success(let data):
                     do {
-                        print(1)
                         let decoder = JSONDecoder()
-                        let body = try decoder.decode(GeneralResponse<T>.self, from: data)
-                        observer.onNext(body.data)
+                        let body = try decoder.decode(T.self, from: data)
+                        observer.onNext(body)
                         observer.onCompleted()
                     }
                     catch let error {
-                        print(2)
                         observer.onError(error)
                     }
                     
                 case .failure(let error):
-                    print(3)
                     observer.onError(error)
                 }
             }

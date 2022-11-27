@@ -12,6 +12,7 @@ import Alamofire
 
 enum KakaoRouter {
     case postStart(scenario: Int)
+    case fetchWaitingLine
 }
 
 extension KakaoRouter: BaseRouter {
@@ -26,6 +27,8 @@ extension KakaoRouter: BaseRouter {
         switch self {
         case .postStart:
             return "/start"
+        case .fetchWaitingLine:
+            return "/waiting_line"
         default: return ""
         }
     }
@@ -38,6 +41,15 @@ extension KakaoRouter: BaseRouter {
             ]
             return .query(query)
         default: return .requestPlain
+        }
+    }
+    
+    var header: HeaderType {
+        switch self {
+        case .postStart:
+            return .withXAuthToken
+        case .fetchWaitingLine:
+            return .withToken
         }
     }
 }

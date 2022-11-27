@@ -11,18 +11,23 @@ import Foundation
 import Alamofire
 import RxSwift
 
-public protocol KakaoService {
+protocol KakaoService {
     func postStart(scenario: Int) -> Observable<PostStartResponse?>
+    func fetchWaitngLine() -> Observable<WaitingLineResponse?>
 }
 
-public class DefaultKakaoService: BaseService {
-    public static let shared = DefaultKakaoService()
+class DefaultKakaoService: BaseService {
+    static let shared = DefaultKakaoService()
     
     private override init() {}
 }
 
 extension DefaultKakaoService: KakaoService {
-    public func postStart(scenario: Int) -> RxSwift.Observable<PostStartResponse?> {
+    func postStart(scenario: Int) -> RxSwift.Observable<PostStartResponse?> {
         requestObjectInRx(KakaoRouter.postStart(scenario: scenario))
+    }
+    
+    func fetchWaitngLine() -> RxSwift.Observable<WaitingLineResponse?> {
+        requestObjectInRx(KakaoRouter.fetchWaitingLine)
     }
 }
