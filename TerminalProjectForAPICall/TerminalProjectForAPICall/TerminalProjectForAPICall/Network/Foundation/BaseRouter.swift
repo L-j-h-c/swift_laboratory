@@ -17,6 +17,7 @@ public protocol BaseRouter: URLRequestConvertible {
     var parameters: RequestParams { get }
     var header: HeaderType { get }
     var multipart: MultipartFormData { get }
+    var parameterEncoding: ParameterEncoding { get }
 }
 
 // MARK: asURLRequest()
@@ -60,20 +61,14 @@ extension BaseRouter {
         
         switch parameters {
             
-        case .query(let query):
-            let queryParams = query.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
-            var components = URLComponents(string: url.appendingPathComponent(path).absoluteString)
-            components?.queryItems = queryParams
-            request.url = components?.url
+        case .query(let query, let parameterEncoding):
+            request = try parameterEncoding.encode(request, with: query)
             
         case .requestBody(let body):
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
             
-        case .queryBody(let query, let body):
-            let queryParams = query.map { URLQueryItem(name: $0.key, value: "\($0.value)") }
-            var components = URLComponents(string: url.appendingPathComponent(path).absoluteString)
-            components?.queryItems = queryParams
-            request.url = components?.url
+        case .queryBody(let query, let body, let parameterEncoding):
+            request = try parameterEncoding.encode(request, with: query)
             
             request.httpBody = try JSONSerialization.data(withJSONObject: body, options: [])
             
@@ -104,8 +99,8 @@ extension BaseRouter {
 // MARK: ParameterType
 
 public enum RequestParams {
-    case queryBody(_ query: [String: Any], _ body: [String: Any])
-    case query(_ query: [String: Any])
+    case queryBody(_ query: [String: Any], _ body: [String: Any], parameterEncoding: ParameterEncoding = JSONEncoding.default)
+    case query(_ query: [String: Any], parameterEncoding: ParameterEncoding = JSONEncoding.default)
     case requestBody(_ body: [String: Any])
     case requestPlain
 }

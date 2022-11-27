@@ -16,6 +16,7 @@ protocol KakaoService {
     func fetchWaitngLine() -> Observable<WaitingLineResponse?>
     func fetchGameResult() -> Observable<GameResultResponse?>
     func fetchUserInfo() -> Observable<UserInfoResponse?>
+    func startMatch(userPairs: [[Int]]) -> Observable<StartMatchResponse?>
 }
 
 class DefaultKakaoService: BaseService {
@@ -25,6 +26,10 @@ class DefaultKakaoService: BaseService {
 }
 
 extension DefaultKakaoService: KakaoService {
+    func startMatch(userPairs: [[Int]]) -> RxSwift.Observable<StartMatchResponse?> {
+        requestObjectInRx(KakaoRouter.startMatch(userPairs: userPairs))
+    }
+    
     func fetchUserInfo() -> RxSwift.Observable<UserInfoResponse?> {
         requestObjectInRx(KakaoRouter.fetchUserInfo)
     }

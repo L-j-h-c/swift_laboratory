@@ -15,12 +15,14 @@ enum KakaoRouter {
     case fetchWaitingLine
     case fetchGameResult
     case fetchUserInfo
+    case startMatch(userPairs: [[Int]])
 }
 
 extension KakaoRouter: BaseRouter {
     var method: HTTPMethod {
         switch self {
         case .postStart: return .post
+        case .startMatch: return .put
         default: return .get
         }
     }
@@ -35,7 +37,16 @@ extension KakaoRouter: BaseRouter {
             return "/game_result"
         case .fetchUserInfo:
             return "/user_info"
+        case .startMatch:
+            return "/match"
         default: return ""
+        }
+    }
+    
+    var parameterEncoding: ParameterEncoding {
+        switch self {
+        default:
+            return JSONEncoding.default
         }
     }
     
@@ -46,6 +57,11 @@ extension KakaoRouter: BaseRouter {
                 "problem": scenario
             ]
             return .query(query)
+        case .startMatch(let userPairs):
+            let query: [String: Any] = [
+                "pairs": userPairs
+            ]
+            return .query(query, parameterEncoding: parameterEncoding)
         default: return .requestPlain
         }
     }

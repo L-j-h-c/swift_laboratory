@@ -28,6 +28,7 @@
 		EBE2A0AF29336E47006BF471 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBE2A0AE29336E47006BF471 /* RxSwift */; };
 		EBE2A0B129337533006BF471 /* GameResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B029337533006BF471 /* GameResultResponse.swift */; };
 		EBE2A0B3293375DB006BF471 /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */; };
+		EBE2A0B5293377CE006BF471 /* startMatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -59,6 +60,7 @@
 		EBE2A0A729336936006BF471 /* PostStartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStartResponse.swift; sourceTree = "<group>"; };
 		EBE2A0B029337533006BF471 /* GameResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultResponse.swift; sourceTree = "<group>"; };
 		EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
+		EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startMatchResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 				EBE2A0A729336936006BF471 /* PostStartResponse.swift */,
 				EBE2A0B029337533006BF471 /* GameResultResponse.swift */,
 				EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */,
+				EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				EBE2A09829335C4F006BF471 /* config.swift in Sources */,
 				EBE2A09229335C4F006BF471 /* EventMonitor.swift in Sources */,
 				EBE2A09629335C4F006BF471 /* KakaoService.swift in Sources */,
+				EBE2A0B5293377CE006BF471 /* startMatchResponse.swift in Sources */,
 				EBE2A09D29335C4F006BF471 /* WaitingLineResponse.swift in Sources */,
 				EBE2A09029335C4F006BF471 /* BaseService.swift in Sources */,
 			);

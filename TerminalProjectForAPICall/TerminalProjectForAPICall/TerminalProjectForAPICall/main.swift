@@ -25,6 +25,7 @@ func startScenario(scenario: Int) {
             fetchGameResult()
             fetchWaitingLine()
             fetchUserInfo()
+            startMatch(userPairs: [[1,2], [3,4]])
         }).disposed(by: disposeBag)
 }
 
@@ -47,6 +48,13 @@ func fetchUserInfo() {
         .subscribe(onNext: { entity in
         print(entity!)
     }).disposed(by: disposeBag)
+}
+
+func startMatch(userPairs: [[Int]]) {
+    service.startMatch(userPairs: userPairs)
+        .subscribe(onNext: { entity in
+            print(entity!.time)
+        }).disposed(by: disposeBag)
 }
 
 RunLoop.main.run()
