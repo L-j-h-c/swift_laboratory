@@ -28,7 +28,10 @@
 		EBE2A0AF29336E47006BF471 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = EBE2A0AE29336E47006BF471 /* RxSwift */; };
 		EBE2A0B129337533006BF471 /* GameResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B029337533006BF471 /* GameResultResponse.swift */; };
 		EBE2A0B3293375DB006BF471 /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */; };
-		EBE2A0B5293377CE006BF471 /* startMatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */; };
+		EBE2A0B5293377CE006BF471 /* StartMatchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B4293377CE006BF471 /* StartMatchResponse.swift */; };
+		EBE2A0B9293392BB006BF471 /* UserGradeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0B8293392BB006BF471 /* UserGradeRequest.swift */; };
+		EBE2A0BB29339469006BF471 /* ChangeUsersGradeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0BA29339469006BF471 /* ChangeUsersGradeResponse.swift */; };
+		EBE2A0BD29339548006BF471 /* ScenarioScoreResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE2A0BC29339548006BF471 /* ScenarioScoreResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,7 +63,10 @@
 		EBE2A0A729336936006BF471 /* PostStartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostStartResponse.swift; sourceTree = "<group>"; };
 		EBE2A0B029337533006BF471 /* GameResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResultResponse.swift; sourceTree = "<group>"; };
 		EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
-		EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = startMatchResponse.swift; sourceTree = "<group>"; };
+		EBE2A0B4293377CE006BF471 /* StartMatchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartMatchResponse.swift; sourceTree = "<group>"; };
+		EBE2A0B8293392BB006BF471 /* UserGradeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserGradeRequest.swift; sourceTree = "<group>"; };
+		EBE2A0BA29339469006BF471 /* ChangeUsersGradeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeUsersGradeResponse.swift; sourceTree = "<group>"; };
+		EBE2A0BC29339548006BF471 /* ScenarioScoreResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioScoreResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +105,7 @@
 		EBE2A02E29335847006BF471 /* TerminalProjectForAPICall */ = {
 			isa = PBXGroup;
 			children = (
-				EBE2A03E29335965006BF471 /* Model */,
+				EBE2A0B7293392A5006BF471 /* Model */,
 				EBE2A03D2933595B006BF471 /* Network */,
 				EBE2A02F29335847006BF471 /* main.swift */,
 			);
@@ -117,16 +123,18 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		EBE2A03E29335965006BF471 /* Model */ = {
+		EBE2A03E29335965006BF471 /* Response */ = {
 			isa = PBXGroup;
 			children = (
 				EBE2A08629335C4F006BF471 /* WaitingLineResponse.swift */,
 				EBE2A0A729336936006BF471 /* PostStartResponse.swift */,
 				EBE2A0B029337533006BF471 /* GameResultResponse.swift */,
 				EBE2A0B2293375DB006BF471 /* UserInfoResponse.swift */,
-				EBE2A0B4293377CE006BF471 /* startMatchResponse.swift */,
+				EBE2A0B4293377CE006BF471 /* StartMatchResponse.swift */,
+				EBE2A0BA29339469006BF471 /* ChangeUsersGradeResponse.swift */,
+				EBE2A0BC29339548006BF471 /* ScenarioScoreResponse.swift */,
 			);
-			path = Model;
+			path = Response;
 			sourceTree = "<group>";
 		};
 		EBE2A07329335C4E006BF471 /* Foundation */ = {
@@ -165,6 +173,23 @@
 				EBE2A08C29335C4F006BF471 /* KakaoRouter.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		EBE2A0B6293392A0006BF471 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2A0B8293392BB006BF471 /* UserGradeRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		EBE2A0B7293392A5006BF471 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBE2A0B6293392A0006BF471 /* Request */,
+				EBE2A03E29335965006BF471 /* Response */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,11 +271,14 @@
 				EBE2A09B29335C4F006BF471 /* HeaderType.swift in Sources */,
 				EBE2A09A29335C4F006BF471 /* NetworkResult.swift in Sources */,
 				EBE2A0A229335C4F006BF471 /* KakaoRouter.swift in Sources */,
+				EBE2A0BB29339469006BF471 /* ChangeUsersGradeResponse.swift in Sources */,
+				EBE2A0B9293392BB006BF471 /* UserGradeRequest.swift in Sources */,
 				EBE2A0B3293375DB006BF471 /* UserInfoResponse.swift in Sources */,
+				EBE2A0BD29339548006BF471 /* ScenarioScoreResponse.swift in Sources */,
 				EBE2A09829335C4F006BF471 /* config.swift in Sources */,
 				EBE2A09229335C4F006BF471 /* EventMonitor.swift in Sources */,
 				EBE2A09629335C4F006BF471 /* KakaoService.swift in Sources */,
-				EBE2A0B5293377CE006BF471 /* startMatchResponse.swift in Sources */,
+				EBE2A0B5293377CE006BF471 /* StartMatchResponse.swift in Sources */,
 				EBE2A09D29335C4F006BF471 /* WaitingLineResponse.swift in Sources */,
 				EBE2A09029335C4F006BF471 /* BaseService.swift in Sources */,
 			);

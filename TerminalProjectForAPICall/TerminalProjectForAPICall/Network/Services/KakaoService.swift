@@ -17,6 +17,8 @@ protocol KakaoService {
     func fetchGameResult() -> Observable<GameResultResponse?>
     func fetchUserInfo() -> Observable<UserInfoResponse?>
     func startMatch(userPairs: [[Int]]) -> Observable<StartMatchResponse?>
+    func changeUserGrade(usersGrade: UserGradeRequest) -> Observable<ChangeUsersGradeResponse?>
+    func fetchScenarioScore() -> Observable<ScenarioScoreResponse?>
 }
 
 class DefaultKakaoService: BaseService {
@@ -26,6 +28,14 @@ class DefaultKakaoService: BaseService {
 }
 
 extension DefaultKakaoService: KakaoService {
+    func fetchScenarioScore() -> RxSwift.Observable<ScenarioScoreResponse?> {
+        requestObjectInRx(KakaoRouter.fetchScenarioScore)
+    }
+    
+    func changeUserGrade(usersGrade: UserGradeRequest) -> RxSwift.Observable<ChangeUsersGradeResponse?> {
+        requestObjectInRx(KakaoRouter.changeUsersGrade(usersGrade: usersGrade))
+    }
+    
     func startMatch(userPairs: [[Int]]) -> RxSwift.Observable<StartMatchResponse?> {
         requestObjectInRx(KakaoRouter.startMatch(userPairs: userPairs))
     }

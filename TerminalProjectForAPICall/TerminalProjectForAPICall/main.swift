@@ -22,7 +22,6 @@ func startScenario(scenario: Int) {
         .subscribe(onNext: { entity in
             guard let authKey = entity?.authKey else { return }
             NetworkEnvironment.authToken = authKey
-            fetchGameResult()
             fetchWaitingLine()
             fetchUserInfo()
             startMatch(userPairs: [[1,2], [3,4]])
@@ -54,6 +53,23 @@ func startMatch(userPairs: [[Int]]) {
     service.startMatch(userPairs: userPairs)
         .subscribe(onNext: { entity in
             print(entity!.time)
+            changeUsersGrade(usersGrade: [.init(id: 1, grade: 30), .init(id: 2, grade: 50)])
+        }).disposed(by: disposeBag)
+}
+
+func changeUsersGrade(usersGrade: UserGradeRequest) {
+    service.changeUserGrade(usersGrade: usersGrade)
+        .subscribe(onNext: { entity in
+            print(entity!.status)
+            fetchGameResult()
+            fetchScenarioScore()
+        }).disposed(by: disposeBag)
+}
+
+func fetchScenarioScore() {
+    service.fetchScenarioScore()
+        .subscribe(onNext: { entity in
+            print(entity!)
         }).disposed(by: disposeBag)
 }
 
