@@ -13,6 +13,8 @@ import Alamofire
 enum KakaoRouter {
     case postStart(scenario: Int)
     case fetchWaitingLine
+    case fetchGameResult
+    case fetchUserInfo
 }
 
 extension KakaoRouter: BaseRouter {
@@ -29,6 +31,10 @@ extension KakaoRouter: BaseRouter {
             return "/start"
         case .fetchWaitingLine:
             return "/waiting_line"
+        case .fetchGameResult:
+            return "/game_result"
+        case .fetchUserInfo:
+            return "/user_info"
         default: return ""
         }
     }
@@ -48,7 +54,7 @@ extension KakaoRouter: BaseRouter {
         switch self {
         case .postStart:
             return .withXAuthToken
-        case .fetchWaitingLine:
+        default:
             return .withToken
         }
     }

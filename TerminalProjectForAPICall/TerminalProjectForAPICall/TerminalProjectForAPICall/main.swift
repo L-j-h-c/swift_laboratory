@@ -22,13 +22,30 @@ func startScenario(scenario: Int) {
         .subscribe(onNext: { entity in
             guard let authKey = entity?.authKey else { return }
             NetworkEnvironment.authToken = authKey
+            fetchGameResult()
+            fetchWaitingLine()
+            fetchUserInfo()
         }).disposed(by: disposeBag)
 }
 
 func fetchWaitingLine() {
     service.fetchWaitngLine()
         .subscribe(onNext: { entity in
-        print(entity)
+        print(entity!)
+    }).disposed(by: disposeBag)
+}
+
+func fetchGameResult() {
+    service.fetchGameResult()
+        .subscribe(onNext: { entity in
+        print(entity!)
+    }).disposed(by: disposeBag)
+}
+
+func fetchUserInfo() {
+    service.fetchUserInfo()
+        .subscribe(onNext: { entity in
+        print(entity!)
     }).disposed(by: disposeBag)
 }
 
