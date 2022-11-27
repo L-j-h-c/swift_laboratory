@@ -12,7 +12,7 @@ import Alamofire
 import RxSwift
 
 public protocol KakaoService {
-    func writeDreamRecord(title: String, date: String, content: String, emotion: Int, genre: [Int], note: String?, voice: String?) -> Observable<DreamWriteResponse?>
+    func postStart(scenario: Int) -> Observable<PostStartResponse?>
 }
 
 public class DefaultKakaoService: BaseService {
@@ -22,7 +22,7 @@ public class DefaultKakaoService: BaseService {
 }
 
 extension DefaultKakaoService: KakaoService {
-    public func writeDreamRecord(title: String, date: String, content: String, emotion: Int, genre: [Int], note: String?, voice: String?) -> RxSwift.Observable<DreamWriteResponse?> {
-        requestObjectInRx(KakaoRouter.writeRecord(title: title, date: date, content: content, emotion: emotion, genre: genre, note: note, voice: voice))
+    public func postStart(scenario: Int) -> RxSwift.Observable<PostStartResponse?> {
+        requestObjectInRx(KakaoRouter.postStart(scenario: scenario))
     }
 }

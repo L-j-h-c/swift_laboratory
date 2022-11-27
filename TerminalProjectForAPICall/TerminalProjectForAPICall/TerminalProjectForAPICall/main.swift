@@ -11,7 +11,12 @@ import RxSwift
 
 print("Hello, World!")
 
-let service = DefaultRecordService.shared
 let disposeBag = DisposeBag()
+let service = DefaultKakaoService.shared
+
+service.postStart(scenario: 1)
+    .subscribe(onNext: { entity in
+        print(entity)
+    }).disposed(by: disposeBag)
 
 RunLoop.main.run()

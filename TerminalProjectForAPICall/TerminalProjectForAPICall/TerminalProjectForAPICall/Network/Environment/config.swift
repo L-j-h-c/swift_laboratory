@@ -15,7 +15,7 @@ struct IDLiterals {
 struct URLConstants {
     
     // MARK: - Base URL
-    static let baseURL = ""
+    static let baseURL = "https://huqeyhi95c.execute-api.ap-northeast-2.amazonaws.com/prod"
 }
 
 struct NetworkEnvironment {

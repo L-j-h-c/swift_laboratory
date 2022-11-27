@@ -11,39 +11,32 @@ import Foundation
 import Alamofire
 
 enum KakaoRouter {
-    case writeRecord(title: String, date: String, content: String, emotion: Int?, genre: [Int]?, note: String?, voice: String?)
+    case postStart(scenario: Int)
 }
 
 extension KakaoRouter: BaseRouter {
     var method: HTTPMethod {
         switch self {
-        case .writeRecord:
-            return .post
+        case .postStart: return .post
         default: return .get
         }
     }
     
     var path: String {
         switch self {
-        case .writeRecord:
-            return "/record"
+        case .postStart:
+            return "/start"
         default: return ""
         }
     }
     
     var parameters: RequestParams {
         switch self {
-        case .writeRecord(let title, let date, let content, let emotion, let genre, let note, let voice):
-            let requestBody: [String: Any] = [
-                "title": title,
-                "date": date,
-                "content": content,
-                "emotion": emotion,
-                "genre": genre,
-                "note": note,
-                "voice": voice
+        case .postStart(let scenario):
+            let query: [String: Any] = [
+                "problem": scenario
             ]
-            return .requestBody(requestBody)
+            return .query(query)
         default: return .requestPlain
         }
     }
