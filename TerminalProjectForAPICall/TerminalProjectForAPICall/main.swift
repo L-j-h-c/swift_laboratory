@@ -17,7 +17,20 @@ var userCount = 0
 var userGrade: [Int: Int] = [:]
 var nextProblem = true
 
+var waitingWeight: Double = 6
+var maximumGradeDiff = 400.0
+var userAverageGrade: Int = 0
+var gradeDiffDivider: Double = 0
+
+setEnvrionments()
 solve()
+
+func setEnvrionments() {
+    userAverageGrade = 4000
+    waitingWeight = 6
+    maximumGradeDiff = 400.0
+    gradeDiffDivider = 20
+}
 
 func solve() {
     service.postStart(scenario: 1)
@@ -30,7 +43,7 @@ func solve() {
             guard let entity else { return }
             userCount = entity.userInfo.count
             for i in 1...userCount {
-                userGrade[i] = 4000
+                userGrade[i] = userAverageGrade
             }
         })
         .subscribe(onNext: { _ in
@@ -49,7 +62,7 @@ func solve2() {
             guard let entity else { return }
             userCount = entity.userInfo.count
             for i in 1...userCount {
-                userGrade[i] = 4000
+                userGrade[i] = userAverageGrade
             }
         })
         .subscribe(onNext: { _ in
@@ -77,8 +90,8 @@ func round(turnNumber: Int) {
                     //                    winnerDiffWeight = gradeDiff / 50
                     //                    loserDiffWeight = -gradeDiff / 50
                 } else {
-                    winnerDiffWeight = -gradeDiff / 20
-                    loserDiffWeight = gradeDiff / 20
+                    winnerDiffWeight = -gradeDiff / gradeDiffDivider
+                    loserDiffWeight = gradeDiff / gradeDiffDivider
                 }
                 
                 let updateWinValue = winGrade + (100 * (25 / takenTime)) + winnerDiffWeight * (takenTime / 25)
@@ -106,8 +119,6 @@ func round(turnNumber: Int) {
                     while (i+1 < currentWaitings.count) {
                         let diff = (userGrade[sortedWaitings[i].id]! - userGrade[sortedWaitings[i+1].id]!)
                         let waited = turnNumber - sortedWaitings[i].from + 1
-                        let waitingWeight: Double = 6
-                        let maximumGradeDiff = 400.0
                         let weightedDiff = Double(diff) / (Double(waited) / waitingWeight)
                         if weightedDiff <= maximumGradeDiff {
                             matchList.append([sortedWaitings[i].id, sortedWaitings[i+1].id])
