@@ -30,7 +30,7 @@ func solve() {
             guard let entity else { return }
             userCount = entity.userInfo.count
             for i in 1...userCount {
-                userGrade[i] = 1000
+                userGrade[i] = 4000
             }
         })
         .subscribe(onNext: { _ in
@@ -49,7 +49,7 @@ func solve2() {
             guard let entity else { return }
             userCount = entity.userInfo.count
             for i in 1...userCount {
-                userGrade[i] = 1000
+                userGrade[i] = 4000
             }
         })
         .subscribe(onNext: { _ in
@@ -66,114 +66,79 @@ func round(turnNumber: Int) {
             guard let entity else { return }
             currentGameResult = entity.gameResult
             currentGameResult.forEach {
-                let winId = $0.win
-                let loseId = $0.lose
-                let takenTime = $0.taken
-                userGrade.updateValue(userGrade[winId]! + (100 * (takenTime / 25) * (takenTime / 25)) * userGrade[winId]! / 1000, forKey: winId)
-                userGrade.updateValue(userGrade[loseId]! - 50 * takenTime / 25 * userGrade[loseId]! / 1000 * userGrade[loseId]! / 1000, forKey: loseId)
-            }
-            print("turn \(turnNumber)의 결과", currentGameResult)
-            print(userGrade)
-        })
-        .flatMap { _ in service.fetchWaitngLine() }
-        .do(onNext: { entity in
-            guard let entity else { return }
-            currentWaitings = entity.waitingLine
-        })
-        .flatMap { _ in
-            if currentWaitings.count >= 4 {
-                let sortedWaitings = currentWaitings.sorted { userGrade[$0.id]! >= userGrade[$1.id]! }
-                for pairIndex in 0..<currentWaitings.count/2 {
-                    matchList.append([currentWaitings[pairIndex].id, currentWaitings[pairIndex+1].id])
+                let winGrade = Double(userGrade[$0.win]!)
+                let loseGrade = Double(userGrade[$0.lose]!)
+                let takenTime = Double($0.taken)
+                
+                let gradeDiff: Double = winGrade - loseGrade
+                var loserDiffWeight: Double = 0
+                var winnerDiffWeight: Double = 0
+                if gradeDiff >= 0 {
+                    //                    winnerDiffWeight = gradeDiff / 50
+                    //                    loserDiffWeight = -gradeDiff / 50
+                } else {
+                    winnerDiffWeight = -gradeDiff / 20
+                    loserDiffWeight = gradeDiff / 20
+                }
+                
+                let updateWinValue = winGrade + (100 * (25 / takenTime)) + winnerDiffWeight * (takenTime / 25)
+                let updateLoseValue = loseGrade - (100 * (25 / takenTime)) + loserDiffWeight * (takenTime / 25)
+                if nextProblem && takenTime < 10 {
+                    
+                } else {
+                    userGrade.updateValue(Int(updateWinValue), forKey: $0.win)
+                    if updateLoseValue > 0 {
+                        userGrade.updateValue(Int(updateLoseValue), forKey: $0.lose)
+                    }
                 }
             }
-            
-            return service.startMatch(userPairs: matchList)
-        }
-        .compactMap { $0 }
-        .subscribe(onNext: { entity in
-            if entity.status != "finished" { round(turnNumber: entity.time) }
-            else {
-                service.changeUserGrade(usersGrade: userGrade.map { .init(id: $0.key, grade: $0.value)})
-                    .flatMap { _ in
-                        print(userGrade)
-                        return service.fetchScenarioScore()
-                    }
-                    .compactMap { $0 }
-                    .subscribe(onNext: { entity in
-                        print("최종 결과", entity)
-                        print(userGrade)
-                        if nextProblem {
-                            solve2()
-                            nextProblem = false
+            print("turn \(turnNumber): ",userGrade)
+        })
+            .flatMap { _ in service.fetchWaitngLine() }
+            .do(onNext: { entity in
+                guard let entity else { return }
+                currentWaitings = entity.waitingLine
+                print("대기자:", currentWaitings.count)
+            })
+                .flatMap { _ in
+                    let sortedWaitings = currentWaitings.sorted { userGrade[$0.id]! >= userGrade[$1.id]! }
+                    var i = 0
+                    while (i+1 < currentWaitings.count) {
+                        let diff = (userGrade[sortedWaitings[i].id]! - userGrade[sortedWaitings[i+1].id]!)
+                        let waited = turnNumber - sortedWaitings[i].from + 1
+                        let waitingWeight: Double = 6
+                        let maximumGradeDiff = 400.0
+                        let weightedDiff = Double(diff) / (Double(waited) / waitingWeight)
+                        if weightedDiff <= maximumGradeDiff {
+                            matchList.append([sortedWaitings[i].id, sortedWaitings[i+1].id])
+                            i += 2
+                        } else {
+                            i += 1
                         }
-                    }).disposed(by: disposeBag)
-            }
-        }).disposed(by: disposeBag)
-}
-
-func startScenario(scenario: Int) {
-    service.postStart(scenario: scenario)
-        .subscribe(onNext: { entity in
-            guard let authKey = entity?.authKey else { return }
-            NetworkEnvironment.authToken = authKey
-        }).disposed(by: disposeBag)
-}
-
-/// User들의 id와 grade를 불러온다.
-func fetchUserInfo() {
-    service.fetchUserInfo()
-        .subscribe(onNext: { entity in
-            guard let entity = entity else { return }
-            
-        }).disposed(by: disposeBag)
-}
-
-/// 현재 대기열에 있는 유저들의 정보를 받아온다.
-/// id와 몇 턴부터(from) 대기했는지에 대한 정보가 넘어온다.
-func fetchWaitingLine() {
-    service.fetchWaitngLine()
-        .subscribe(onNext: { entity in
-            
-        }).disposed(by: disposeBag)
-}
-
-/// 해당 턴에 종료된 매치의 결과를 받아온다.
-/// win: 이긴 유저의 Id, lose: 진 유저의 Id, taken: 걸린 시간
-func fetchGameResult() {
-    service.fetchGameResult()
-        .subscribe(onNext: { entity in
-            print(entity!)
-        }).disposed(by: disposeBag)
-}
-
-/// Users를 Match시킬 수 있다. 대기중인 유저를 짝지어주며 다음 턴으로 넘어간다.
-/// 만약 매치시킬 유저가 없으면 빈 배열을 보내야 한다.
-/// - Parameter userPairs: match 시킬 userId들의 pairs를 입력한다.
-func startMatch(userPairs: [[Int]]) {
-    service.startMatch(userPairs: userPairs)
-        .subscribe(onNext: { entity in
-            print(entity!.time)
-        }).disposed(by: disposeBag)
-}
-
-/// Users의 Grade를 바꿀 수 있다.
-/// - Parameter usersGrade: Grade를 바꾸고자 하는 유저의 Id 와 Grade 쌍들을 입력한다.
-func changeUsersGrade(usersGrade: UserGradeRequest) {
-    service.changeUserGrade(usersGrade: usersGrade)
-        .subscribe(onNext: { entity in
-            print(entity!.status)
-            fetchGameResult()
-            fetchScenarioScore()
-        }).disposed(by: disposeBag)
-}
-
-/// 최종적으로 결과를 받아올 수 있다.
-func fetchScenarioScore() {
-    service.fetchScenarioScore()
-        .subscribe(onNext: { entity in
-            print(entity!)
-        }).disposed(by: disposeBag)
+                    }
+                    
+                    return service.startMatch(userPairs: matchList)
+                }
+                .compactMap { $0 }
+                .subscribe(onNext: { entity in
+                    if entity.status != "finished" { round(turnNumber: entity.time) }
+                    else {
+                        service.changeUserGrade(usersGrade: userGrade.map { .init(id: $0.key, grade: $0.value)})
+                            .flatMap { _ in
+                                print(userGrade)
+                                return service.fetchScenarioScore()
+                            }
+                            .compactMap { $0 }
+                            .subscribe(onNext: { entity in
+                                print("최종 결과", entity)
+                                print(userGrade)
+                                if nextProblem {
+                                    solve2()
+                                    nextProblem = false
+                                }
+                            }).disposed(by: disposeBag)
+                    }
+                }).disposed(by: disposeBag)
 }
 
 RunLoop.main.run()
