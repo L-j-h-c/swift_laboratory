@@ -173,10 +173,6 @@ public class LockTest {
     func rewriteWork(id: Int) {
         print("rewrite: \(id)")
     }
-    
-    public init(counter: Double) {
-        self.counter = counter
-    }
 }
 
 // MARK: - Actor
@@ -278,14 +274,12 @@ func lockWithConcurrecny(count: Int) {
 
 // Execution
 
-standard = 30000
+//standard = 30000
 let count = Int(standard / 1.19)
 //actor(count: count)
 //classAsync(count: count)
-serialGCD(count: count)
+//serialGCD(count: count)
 //serialAsync(count: count)
 //serialAsyncBarrier(count: count)
 //lockWithGCD(count: count)
 //lockWithConcurrecny(count: count)
-
-RunLoop.main.run(until: .now.addingTimeInterval(1000))
