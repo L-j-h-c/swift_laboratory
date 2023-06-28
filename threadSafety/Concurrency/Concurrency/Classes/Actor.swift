@@ -15,21 +15,10 @@ class MyClass {
     
     func incrementCounter() {
         counter += 1.2
-        print("Counter incremented to: \(counter)")
-        if counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) async {
-        print("Starting work: \(id)")
         incrementCounter()
-        print("Finished work: \(id)")
-    }
-    
-    func rewriteWork(id: Int) async {
-        print("rewrite: \(id)")
     }
 }
 
@@ -38,22 +27,10 @@ actor MyActor {
     
     func incrementCounter() {
         counter += 1.2
-        print("Counter incremented to: \(counter)")
-        if counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) async {
-        print("Starting work: \(id)")
-        //        let count = counter
         incrementCounter()
-        print("Finished work: \(id)")
-    }
-    
-    func rewriteWork(id: Int) async {
-        print("rewrite: \(id)")
     }
 }
 
@@ -64,10 +41,6 @@ class SerialQueue {
     func incrementCounter() {
         counter += 1.2
         print("Counter incremented to: \(counter)")
-        if counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) {
@@ -76,10 +49,6 @@ class SerialQueue {
             incrementCounter()
             print("Finished work: \(id)")
         }
-    }
-    
-    func rewriteWork(id: Int) {
-        print("rewrite: \(id)")
     }
 }
 
@@ -97,10 +66,6 @@ class SerialAsyncQueue {
     func incrementCounter() {
         _counter += 1.2
         print("Counter incremented to: \(_counter)")
-        if _counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) async {
@@ -109,10 +74,6 @@ class SerialAsyncQueue {
             self.incrementCounter()
             print("Finished work: \(id)")
         }
-    }
-    
-    func rewriteWork(id: Int) {
-        print("rewrite: \(id)")
     }
 }
 
@@ -130,10 +91,6 @@ public class SerialAsyncBarrierQueue {
     func incrementCounter() {
         _counter += 1.2
         print("Counter incremented to: \(_counter)")
-        if _counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) async {
@@ -143,10 +100,6 @@ public class SerialAsyncBarrierQueue {
             print("Finished work: \(id)")
         }
     }
-    
-    func rewriteWork(id: Int) {
-        print("rewrite: \(id)")
-    }
 }
 
 public class LockTest {
@@ -155,23 +108,12 @@ public class LockTest {
     
     func incrementCounter() {
         counter += 1.2
-        print("Counter incremented to: \(counter)")
-        if counter >= standard {
-            let now = Date()
-            print(now.timeIntervalSince(time))
-        }
     }
     
     func performAsyncWork(id: Int) {
         lock.lock()
-        print("Starting work: \(id)")
         incrementCounter()
-        print("Finished work: \(id)")
         lock.unlock()
-    }
-    
-    func rewriteWork(id: Int) {
-        print("rewrite: \(id)")
     }
 }
 

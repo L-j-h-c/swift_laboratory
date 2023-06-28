@@ -11,6 +11,7 @@ import XCTest
 final class ConcurrencyTests: XCTestCase {
     
     let standard = 20000.0
+    let iteration = 40
     lazy var count = Int(standard / 1.19)
 
     func testLockPerformance() {
@@ -19,11 +20,11 @@ final class ConcurrencyTests: XCTestCase {
         
         let metrics: [XCTMetric] = [
             XCTClockMetric(),
-            XCTCPUMetric()
+//            XCTCPUMetric()
         ]
 
         let options = XCTMeasureOptions()
-        options.iterationCount = 50
+        options.iterationCount = iteration
 
         measure(metrics: metrics, options: options) {
             for i in 0..<count {
@@ -44,17 +45,17 @@ final class ConcurrencyTests: XCTestCase {
         
         let metrics: [XCTMetric] = [
             XCTClockMetric(),
-            XCTCPUMetric()
+//            XCTCPUMetric()
         ]
 
         let options = XCTMeasureOptions()
-        options.iterationCount = 50
+        options.iterationCount = iteration
 
         measure(metrics: metrics, options: options) {
             for i in 0..<count {
                 dispatchGroup.enter()
                 Task {
-                    await myActor.performAsyncWork(id: i)
+                    await actor.performAsyncWork(id: i)
                     dispatchGroup.leave()
                 }
             }
@@ -69,11 +70,11 @@ final class ConcurrencyTests: XCTestCase {
 
         let metrics: [XCTMetric] = [
             XCTClockMetric(),
-            XCTCPUMetric()
+//            XCTCPUMetric()
         ]
 
         let options = XCTMeasureOptions()
-        options.iterationCount = 50
+        options.iterationCount = iteration
 
         measure(metrics: metrics, options: options) {
             for i in 0..<count {
@@ -94,11 +95,11 @@ final class ConcurrencyTests: XCTestCase {
         
         let metrics: [XCTMetric] = [
             XCTClockMetric(),
-            XCTCPUMetric()
+//            XCTCPUMetric()
         ]
 
         let options = XCTMeasureOptions()
-        options.iterationCount = 50
+        options.iterationCount = iteration
 
         measure(metrics: metrics, options: options) {
             for i in 0..<count {

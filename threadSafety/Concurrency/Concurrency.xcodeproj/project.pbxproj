@@ -15,6 +15,8 @@
 		EB2340CD29FC1ED2001772DC /* ConcurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2340CC29FC1ED2001772DC /* ConcurrencyUITests.swift */; };
 		EB2340CF29FC1ED2001772DC /* ConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2340CE29FC1ED2001772DC /* ConcurrencyUITestsLaunchTests.swift */; };
 		EB2340DD29FC1EEA001772DC /* Actor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2340DC29FC1EEA001772DC /* Actor.swift */; };
+		EB6257B22A0D188200C2D754 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6257B12A0D188200C2D754 /* Counter.swift */; };
+		EB6257B42A0D189800C2D754 /* ActorNSLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6257B32A0D189800C2D754 /* ActorNSLock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		EB2340CC29FC1ED2001772DC /* ConcurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUITests.swift; sourceTree = "<group>"; };
 		EB2340CE29FC1ED2001772DC /* ConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB2340DC29FC1EEA001772DC /* Actor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actor.swift; sourceTree = "<group>"; };
+		EB6257B12A0D188200C2D754 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		EB6257B32A0D189800C2D754 /* ActorNSLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActorNSLock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		EB2340AF29FC1ED0001772DC /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				EB6257B02A0D187900C2D754 /* ActorNSLock */,
 				EB2340DB29FC1EDF001772DC /* Classes */,
 				EB2340B029FC1ED0001772DC /* AppDelegate.swift */,
 				EB2340B229FC1ED0001772DC /* ViewController.swift */,
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2340C229FC1ED2001772DC /* ConcurrencyTests.swift */,
+				EB6257B32A0D189800C2D754 /* ActorNSLock.swift */,
 			);
 			path = ConcurrencyTests;
 			sourceTree = "<group>";
@@ -130,6 +136,14 @@
 				EB2340DC29FC1EEA001772DC /* Actor.swift */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB6257B02A0D187900C2D754 /* ActorNSLock */ = {
+			isa = PBXGroup;
+			children = (
+				EB6257B12A0D188200C2D754 /* Counter.swift */,
+			);
+			path = ActorNSLock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6257B22A0D188200C2D754 /* Counter.swift in Sources */,
 				EB2340DD29FC1EEA001772DC /* Actor.swift in Sources */,
 				EB2340B329FC1ED0001772DC /* ViewController.swift in Sources */,
 				EB2340B129FC1ED0001772DC /* AppDelegate.swift in Sources */,
@@ -273,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB2340C329FC1ED2001772DC /* ConcurrencyTests.swift in Sources */,
+				EB6257B42A0D189800C2D754 /* ActorNSLock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
